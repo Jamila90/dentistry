@@ -1,0 +1,13 @@
+{
+  "root": true,
+
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jquery": true
+  },
+  "globals": {
+    "require": true
+  },
+  "extends": "htmlacademy/es5"
+}
