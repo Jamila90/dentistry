@@ -1,0 +1,142 @@
+.our-doctors__wrap {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 14px 10px 0;
+}
+
+.our-doctors__wrap h2 {
+  margin: 0 0 13px;
+  text-align: center;
+  font-weight: normal;
+  color: rgb(28, 157, 229);
+}
+
+.our-doctors__item-slide {
+  width: 67px;
+}
+
+.our-doctors__item-slide-wrap h3 {
+  display: none;
+}
+
+.our-doctors__wrap p {
+  margin: 0 0 12px;
+  font-size: 9px;
+  padding: 0 94px;
+  text-align: center;
+  line-height: 13px;
+  color: rgba(160, 160, 160, 1);
+}
+
+.our-doctors__wrap span {
+  font-size: 14px;
+  color: rgb(28, 157, 229);
+}
+
+.our-doctors__container-mini {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.our-doctors__list-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.our-doctors__list-wrap--big {
+  height: 283px;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  .our-doctors__wrap {
+    max-width: 768px;
+    padding: 15px 180px;
+  }
+
+  .our-doctors__wrap p {
+    padding: 0 148px;
+  }
+
+  .our-doctors__list-wrap--big {
+    height: 335px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .our-doctors__wrap {
+    max-width: 1200px;
+    padding: 24px 100px 112px;
+  }
+
+  .our-doctors__wrap h2 {
+    font-size: 48px;
+    margin-bottom: 72px;
+  }
+
+  .our-doctors__item-slide-wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    background-color: rgba(248, 248, 248, 1);
+    padding: 7px 20px 7px 45px;
+    border-radius: 10px;
+    align-items: center;
+    margin-bottom: 17px;
+  }
+
+  .our-doctors__container-wrap {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+  }
+
+  .our-doctors__container-mini {
+    max-width: 386px;
+    width: 100%;
+    margin-right: 70px;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  .our-doctors__container-wrap p {
+    position: absolute;
+    padding: 0;
+    max-width: 214px;
+    font-size: 18px;
+    line-height: 24px;
+    bottom: -118px;
+    right: 82px;
+  }
+
+  .our-doctors__container-big {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .our-doctors__list-wrap--mini {
+    flex-direction: column;
+  }
+
+  .our-doctors__list-wrap--big {
+    height: 430px;
+    max-width: 459px;
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .our-doctors__container-wrap p span {
+    font-size: 24px;
+  }
+
+  .our-doctors__item-slide-wrap h3 {
+    display: block;
+    margin: 0;
+    font-size: 18px;
+    padding-left: 47px;
+  }
+}

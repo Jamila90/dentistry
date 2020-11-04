@@ -1,0 +1,203 @@
+/* Слайдер общие стили */
+.slick-slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+  margin: 0 auto;
+  height: auto;
+  min-width: 0;
+  display: flex;
+  max-width: 320px;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-slide {
+  display: flex;
+}
+
+.healthy-teeth__item-slide.slick-slide {
+  width: 201px !important; /* stylelint-disable-line */  //Использовала для переопределения стилей плагина
+  height: 415px !important; /* stylelint-disable-line */  //Использовала для переопределения стилей плагина
+}
+
+.healthy-teeth__item-slide {
+  justify-content: center;
+  filter: blur(1px);
+}
+
+.healthy-teeth__item-slide.slick-center {
+  filter: blur(0);
+  transform: scale(1.1);
+}
+
+.healthy-teeth__container .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+.healthy-teeth__container .slick-dots li {
+  list-style: none;
+  margin-right: 0;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.healthy-teeth__container .slick-dots button {
+  font-size: 0;
+  width: 5px;
+  height: 5px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(159, 219, 236, 1);
+  cursor: url("../img/icon-cursor.svg"), pointer;
+}
+
+.healthy-teeth__container .slick-dots li.slick-active button {
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  background-image: url("../img/icon-active-dots.svg");
+  background-repeat: no-repeat;
+  background-size: 10px 10px;
+  background-position: 0 0;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .healthy-teeth__list-wrap .slick-list {
+    max-width: 678px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .healthy-teeth__list-wrap .slick-list {
+    max-width: 1200px;
+    flex-direction: row;
+  }
+
+  .healthy-teeth__list-wrap .slick-arrow {
+    position: absolute;
+    font-size: 0;
+    z-index: 10;
+  }
+
+  .healthy-teeth__list-wrap .slick-prev {
+    top: 0;
+    left: 0;
+    width: 57px;
+    height: 57px;
+    background-color: transparent;
+    background-image: url("../img/icon-arrow-left.svg");
+    background-repeat: no-repeat;
+    background-size: 57px 57px;
+    border: none;
+    cursor: url("../img/icon-cursor.svg"), pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .healthy-teeth__list-wrap .slick-next {
+    right: 0;
+    top: 0;
+    width: 57px;
+    height: 57px;
+    background-color: transparent;
+    background-image: url("../img/icon-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-size: 57px 57px;
+    border: none;
+    cursor: url("../img/icon-cursor.svg"), pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.our-doctors__list-mini-wrap.slick-slider {
+  display: flex;
+  flex-direction: row;
+}
+
+.our-doctors__item-slide-wrap.slick-slide {
+  width: 75px !important; /* stylelint-disable-line */  //Использовала для переопределения стилей плагина
+}
+
+.our-doctors__list-mini-wrap .slick-list {
+  overflow: hidden;
+}
+
+.our-doctors__list-big-wrap.slick-slider {
+  display: flex;
+  flex-direction: row;
+}
+
+.our-doctors__list-big-wrap {
+  position: relative;
+}
+
+.our-doctors__list-big-wrap .slick-track {
+  align-items: inherit;
+}
+
+.our-doctors__list-big-wrap .slick-arrow {
+  position: absolute;
+  font-size: 0;
+  z-index: 10;
+}
+
+.our-doctors__list-big-wrap .slick-prev {
+  top: 30%;
+  left: 15px;
+  width: 16px;
+  height: 32px;
+  background-color: transparent;
+  background-image: url("../img/icon-arrow-left-slider.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 32px;
+  border: none;
+  cursor: url("../img/icon-cursor.svg"), pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.our-doctors__list-big-wrap .slick-next {
+  right: 15px;
+  top: 30%;
+  width: 16px;
+  height: 32px;
+  background-color: transparent;
+  background-image: url("../img/icon-arrow-right-slider.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 32px;
+  border: none;
+  cursor: url("../img/icon-cursor.svg"), pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

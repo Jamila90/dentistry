@@ -1,0 +1,122 @@
+.nav {
+  position: absolute;
+  width: 100%;
+  display: none;
+  left: 0;
+  padding-top: 25px;
+  padding-bottom: 223px;
+  background-color: white;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 291px;
+    height: 269px;
+    background-image: url("../img/img-menu-mob@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.nav--closed {
+  display: block;
+}
+
+.nav__list {
+  margin: 0 0 31px 0;
+  padding: 0 0 0 26px;
+  list-style: none;
+}
+
+.nav__phone-wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 0 28px;
+  text-align: end;
+  max-width: 320px;
+  margin: 0 auto 29px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 28px 3px;
+}
+
+.nav__item {
+  margin-bottom: 12px;
+}
+
+.nav__link {
+  color: rgba(160, 160, 160, 1);
+  cursor: url("../img/icon-cursor.svg"), pointer;
+
+  &:hover {
+    opacity: 0.7;
+    border-bottom: 2px solid rgba(1, 112, 176, 1);
+  }
+}
+
+.nav__phone-link {
+  font-size: 23px;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  background: linear-gradient(352deg, rgba(1, 112, 176, 1) 28%, rgba(24, 187, 235, 1) 100%);
+  -webkit-background-clip: text; /*stylelint-disable-line*/
+  -webkit-text-fill-color: transparent;
+  cursor: url("../img/icon-cursor.svg"), pointer;
+}
+
+.nav__link-form {
+  text-decoration: underline;
+  color: rgba(1, 112, 176, 1);
+  cursor: url("../img/icon-cursor.svg"), pointer;
+}
+
+@media only screen and (min-width: 1440px) {
+  .nav {
+    position: initial;
+    display: flex;
+    padding: 0;
+    width: 82%;
+    padding-left: 158px;
+    align-items: center;
+    justify-content: space-between;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .nav__list {
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .nav__item {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .nav__link {
+    white-space: nowrap;
+  }
+
+  .nav__phone-wrap {
+    padding-right: 0;
+    margin: 0;
+    background-position: 0 3px;
+    padding-left: 40px;
+  }
+
+  .nav__phone-link {
+    letter-spacing: 0.1px;
+  }
+}

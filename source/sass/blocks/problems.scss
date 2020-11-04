@@ -1,0 +1,206 @@
+.problems {
+  overflow: hidden;
+}
+
+.problems__wrap {
+  position: relative;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 29px 31px 34px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -108px;
+    right: -112px;
+    width: 175px;
+    height: 256px;
+    background-image: url("../img/img-tools-mob@1x.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.problems__wrap h2 {
+  margin: 0;
+  font-weight: normal;
+  color: rgba(41, 41, 43, 1);
+}
+
+.problems__dentist {
+  color: rgba(28, 157, 229, 1);
+}
+
+.problems__teeth {
+  color: rgba(28, 157, 229, 1);
+}
+
+.problems__practice {
+  display: none;
+}
+
+.problems__wrap p {
+  margin: 0 0 8px;
+  color: rgba(160, 160, 160, 1);
+  font-size: 12px;
+  letter-spacing: 0.1px;
+}
+
+.problems__contacts-wrap {
+  padding-left: 29px;
+}
+
+.problems__contacts-wrap .problems__descr {
+  position: relative;
+  font-size: 7px;
+  line-height: 11px;
+  letter-spacing: 0.4px;
+}
+
+.problems__descr--doctor {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -28px;
+    width: 20px;
+    height: 22px;
+    background-image: url("../img/icon-doctor.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 22px;
+  }
+}
+
+.problems__descr--address {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -28px;
+    width: 16px;
+    height: 22px;
+    background-image: url("../img/icon-location.svg");
+    background-repeat: no-repeat;
+    background-size: 16px 22px;
+  }
+}
+
+.problems__descr span {
+  font-size: 10px;
+  color: rgba(28, 157, 229, 1);
+  letter-spacing: 0.1px;
+}
+
+@media only screen and (min-width: 768px) {
+  .problems__wrap {
+    max-width: 768px;
+    padding: 25px 80px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-image: url("../img/img-problems@1x.png");
+    background-repeat: no-repeat;
+    background-size: 365px 260px;
+    background-position: 50px 85px;
+
+    &::before {
+      top: -50px;
+      right: -70px;
+      width: 175px;
+      height: 256px;
+    }
+  }
+
+  .problems__wrap h2,
+  .problems__wrap p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .problems__contacts-wrap .problems__descr {
+    text-align: start;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .problems__wrap {
+    max-width: 1200px;
+    padding: 58px 137px;
+    background-size: 697px 493px;
+    background-position: -43px 155px;
+
+    &::before {
+      width: 485px;
+      height: 265px;
+      top: -184px;
+      right: -365px;
+      background-image: url("../img/img-tools@1x.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+
+  .problems__wrap h2 {
+    margin-bottom: 20px;
+    font-size: 48px;
+  }
+
+  .problems__wrap p {
+    margin-bottom: 65px;
+    font-size: 22px;
+  }
+
+  .problems__wrap p em {
+    display: none;
+  }
+
+  .problems__which {
+    background: linear-gradient(355deg, rgba(1, 112, 176, 1) 28%, rgba(24, 187, 235, 1) 100%);
+    -webkit-background-clip: text; /*stylelint-disable-line*/
+    -webkit-text-fill-color: transparent;
+  }
+
+  .problems__teeth {
+    color: rgba(41, 41, 43, 1);
+  }
+
+  .problems__practice {
+    display: initial;
+    color: rgba(28, 157, 229, 1);
+  }
+
+  .problems__contacts-wrap {
+    padding-left: 49px;
+  }
+
+  .problems__contacts-wrap .problems__descr {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+  }
+
+  .problems__contacts-wrap .problems__descr span {
+    font-size: 18px;
+  }
+
+  .problems__descr--doctor {
+    &::before {
+      top: 6px;
+      left: -46px;
+      width: 35px;
+      height: 40px;
+      background-size: 35px 40px;
+    }
+  }
+
+  .problems__descr--address {
+    &::before {
+      top: 6px;
+      left: -46px;
+      width: 29px;
+      height: 40px;
+      background-size: 29px 40px;
+    }
+  }
+}

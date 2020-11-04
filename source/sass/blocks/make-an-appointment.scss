@@ -1,0 +1,88 @@
+.make-an-appointment {
+  overflow: hidden;
+}
+
+.make-an-appointment__wrap {
+  position: relative;
+  padding: 416px 11px 59px;
+  max-width: 320px;
+  margin: 0 auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 665px;
+    height: 520px;
+    top: 146px;
+    right: -296px;
+    background-image: url("../img/img-dentist-chair2@1x.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.make-an-appointment__wrap h2 {
+  margin: 0;
+  font-weight: normal;
+  color: rgb(28, 157, 229);
+  padding-right: 120px;
+  line-height: 29px;
+}
+
+.make-an-appointment__wrap p {
+  margin: 0 0 14px;
+  font-size: 12px;
+  padding-right: 100px;
+  line-height: 21px;
+  color: rgb(160, 160, 160);
+}
+
+.make-an-appointment__wrap p strong {
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+  .make-an-appointment__wrap {
+    max-width: 768px;
+    padding: 80px 351px 59px 55px;
+  }
+
+  .make-an-appointment__wrap::before {
+    width: 665px;
+    height: 520px;
+    top: -45px;
+    right: -120px;
+    background-size: 600px 475px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .make-an-appointment__wrap {
+    max-width: 1200px;
+    padding: 26px 654px 72px 107px;
+  }
+
+  .make-an-appointment__wrap::before {
+    width: 665px;
+    height: 520px;
+    top: -44px;
+    right: 0;
+    background-size: 665px 520px;
+  }
+
+  .make-an-appointment__wrap h2 {
+    font-size: 36px;
+    padding-right: 0;
+    line-height: 41px;
+    margin-bottom: 18px;
+  }
+
+  .make-an-appointment__wrap h2 br {
+    display: none;
+  }
+
+  .make-an-appointment__wrap p {
+    font-size: 14px;
+    padding-right: 50px;
+    letter-spacing: -0.3px;
+  }
+}

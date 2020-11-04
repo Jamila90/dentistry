@@ -1,0 +1,68 @@
+.footer-page {
+  background: linear-gradient(295deg, rgba(1, 112, 176, 1) 25%, rgba(24, 187, 235, 1) 100%);
+}
+
+.footer-page__wrap {
+  position: relative;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.footer-page__logo-wrap {
+  position: absolute;
+  width: 174px;
+  bottom: 75px;
+  left: 73px;
+  text-align: center;
+}
+
+.footer-page__confidential {
+  font-size: 10px;
+  color: rgb(170, 232, 255);
+  letter-spacing: -0.2px;
+  text-decoration: underline;
+  cursor: url("../img/icon-cursor.svg"), pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-page {
+    background: linear-gradient(325deg, rgba(1, 112, 176, 1) 50%, rgba(24, 187, 235, 1) 135%);
+  }
+
+  .footer-page__wrap {
+    max-width: 768px;
+    padding: 0 40px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .footer-page__logo-wrap {
+    position: inherit;
+    top: 67px;
+    width: 225px;
+    text-align: start;
+    left: 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer-page__wrap {
+    align-items: start;
+    max-width: 1200px;
+    padding: 39px 16px 55px;
+  }
+
+  .footer-page__logo-wrap {
+    position: initial;
+    width: 268px;
+  }
+
+  .footer-page__confidential {
+    font-size: 14px;
+  }
+}

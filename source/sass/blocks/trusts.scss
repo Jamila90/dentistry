@@ -1,0 +1,251 @@
+.trusts {
+  overflow: hidden;
+}
+
+.trusts__wrap {
+  position: relative;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 5px 10px 40px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -148px;
+    right: -112px;
+    width: 175px;
+    height: 256px;
+    background-image: url("../img/img-tools-mob@1x.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.trusts__wrap h2 span {
+  color: rgba(28, 157, 229, 1);
+}
+
+.trusts__wrap h2 {
+  margin: 0 0 33px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 27px;
+  color: rgba(41, 41, 43, 1);
+}
+
+.trusts__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.trusts__item {
+  margin-bottom: 50px;
+  font-size: 12px;
+  color: rgba(41, 41, 43, 1);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.trusts__item h3 {
+  margin: 0;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 900;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 23%, rgba(237, 237, 237, 1) 110%);
+  color: rgba(237, 237, 237, 1);
+  -webkit-background-clip: text; /*stylelint-disable-line*/
+  -webkit-text-fill-color: transparent;
+}
+
+.trusts__item p {
+  margin: 0;
+  line-height: 18px;
+}
+
+.trusts__item--because {
+  position: relative;
+  max-width: 144px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: -180px;
+    width: 205px;
+    height: 153px;
+    background-image: url("../img/img-trust-mob1@1x.png");
+    background-repeat: no-repeat;
+    background-size: 202px 153px;
+  }
+}
+
+.trusts__equipment,
+.trusts__price,
+.trusts__centre {
+  color: rgba(28, 157, 229, 1);
+}
+
+.trusts__item--because-of {
+  position: relative;
+  max-width: 181px;
+  margin-left: auto;
+  margin-bottom: 35px;
+  text-align: end;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -155px;
+    width: 200px;
+    height: 134px;
+    background-image: url("../img/img-trust-mob2@1x.png");
+    background-repeat: no-repeat;
+    background-size: 197px 134px;
+  }
+}
+
+.trusts__item--and {
+  position: relative;
+  max-width: 130px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 135px;
+    width: 257px;
+    height: 170px;
+    background-image: url("../img/img-trust-mob3@1x.png");
+    background-size: 257px 170px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .trusts__wrap {
+    max-width: 768px;
+    padding: 50px 110px 90px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .trusts__wrap h2 {
+    margin: 0 0 60px;
+  }
+
+  .trusts__item {
+    max-width: 260px;
+    margin-bottom: 90px;
+  }
+
+  .trusts__item--because {
+    &::before {
+      top: -35px;
+      right: -277px;
+      width: 260px;
+      height: 195px;
+      background-image: url("../img/img-trust1@1x.png");
+      background-repeat: no-repeat;
+      background-size: 260px 195px;
+    }
+  }
+
+  .trusts__item--because-of {
+    &::before {
+      background-image: url("../img/img-trust2@1x.png");
+      background-size: 285px 195px;
+      top: -31px;
+      left: -325px;
+      width: 285px;
+      height: 195px;
+    }
+  }
+
+  .trusts__item--and {
+    &::before {
+      top: -35px;
+      left: 285px;
+      width: 300px;
+      height: 195px;
+      background-image: url("../img/img-trust3@1x.png");
+      background-repeat: no-repeat;
+      background-size: 300px 195px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .trusts__wrap {
+    max-width: 1200px;
+    padding: 11px 80px 90px;
+  }
+
+  .trusts__wrap h2 {
+    margin: 0 0 207px;
+    font-size: 48px;
+  }
+
+  .trusts__wrap h2 br {
+    display: none;
+  }
+
+  .trusts__item  {
+    margin-bottom: 309px;
+    max-width: 483px;
+  }
+
+  .trusts__item  h3 {
+    font-size: 62px;
+    line-height: 60px;
+  }
+
+  .trusts__item p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .trusts__item br {
+    display: none;
+  }
+
+  .trusts__item--because {
+    &::before {
+      top: -165px;
+      right: -694px;
+      width: 657px;
+      height: 493px;
+      background-size: 657px 493px;
+    }
+  }
+
+  .trusts__item--because-of {
+    margin-bottom: 260px;
+    max-width: 500px;
+
+    &::before {
+      top: -115px;
+      left: -665px;
+      width: 640px;
+      height: 431px;
+      background-size: 640px 431px;
+    }
+  }
+
+  .trusts__item--because-of h3 {
+    font-size: 53px;
+  }
+
+  .trusts__item--and {
+    &::before {
+      top: -127px;
+      left: 530px;
+      width: 647px;
+      height: 424px;
+      background-size: 647px 424px;
+    }
+  }
+}

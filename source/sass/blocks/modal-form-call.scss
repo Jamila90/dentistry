@@ -1,0 +1,185 @@
+.modal-form-call {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background: rgba(217, 217, 217, 0.9);
+  z-index: 10000;
+}
+
+.modal-form-call__call {
+  position: absolute;
+  border-radius: 10px;
+  z-index: 1;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 10px;
+  max-width: 290px;
+  padding: 30px 25px;
+  background-color: white;
+}
+
+.modal-form-call__call h2 {
+  font-weight: normal;
+  font-size: 22px;
+  margin: 0 0 5px;
+  padding: 0 12px;
+  text-align: center;
+}
+
+.modal-form-call__call p {
+  font-size: 9px;
+  color: rgb(160, 160, 160);
+  margin: 0 0 5px;
+  text-align: center;
+}
+
+.modal-form-call__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 19px;
+}
+
+.modal-form-call__button {
+  position: relative;
+  margin: 0 auto;
+  border: none;
+  padding: 13px 38px;
+  font-size: 15px;
+  background: linear-gradient(266deg, rgba(255, 0, 0, 1) 0%, rgba(255, 34, 114, 1) 100%);
+  box-shadow: 0 0 12px 3px rgba(255, 0, 0, 0.14);
+  text-transform: none;
+  color: white;
+  cursor: url("../img/icon-cursor.svg"), pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 212px;
+    height: 59px;
+    border: 1.5px solid rgba(255, 198, 218, 1);
+    border-radius: 50px;
+    top: -6px;
+    left: -7px;
+  }
+
+  &:hover {
+    background: linear-gradient(258deg, rgba(255, 57, 69, 1) 0%, rgba(255, 73, 150, 1) 100%);
+    box-shadow: 0 0 7px 7px rgba(255, 0, 0, 0.14);
+  }
+
+  &:active {
+    background: linear-gradient(280deg, rgba(221, 0, 0, 1) 0%, rgba(248, 0, 89, 1) 100%);
+  }
+}
+
+.modal-form-call__button:hover::before {
+  border: 2px solid rgba(255, 73, 150, 1);
+}
+
+.modal-form-call__button:active::before {
+  border: 2px solid rgba(248, 0, 89, 1);
+}
+
+.modal-form-call__button span {
+  display: none;
+}
+
+.modal-form-call__item {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.modal-form-call__item input {
+  padding: 13px 32px;
+  width: 100%;
+  border-radius: 5px;
+
+  &::placeholder {
+    font-size: 12px;
+    color: rgba(163, 163, 163, 1);
+  }
+}
+
+.modal-form-call__icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 9px;
+  top: 16px;
+}
+
+.modal-form-call__toggle {
+  position: absolute;
+  top: -5px;
+  right: -20px;
+  width: 8px;
+  height: 12px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon-form-close.svg");
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
+  background-position: 4px 0;
+  cursor: url("../img/icon-cursor.svg"), pointer;
+}
+
+.modal-form-call--show {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-form-call__call {
+    max-width: 425px;
+    padding: 56px 30px 56px 30px;
+    top: 50px;
+  }
+
+
+  .modal-form-call__call h2 {
+    font-size: 32px;
+    padding: 0;
+    line-height: 34px;
+  }
+
+  .modal-form-call__call p {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .modal-form-call__item {
+    margin-bottom: 15px;
+  }
+
+  .modal-form-call__item input {
+    padding: 25px 61px;
+
+    &::placeholder {
+      font-size: 18px;
+    }
+  }
+
+  .modal-form-call__button {
+    font-size: 18px;
+    padding: 18px 40px;
+
+    &::before {
+      width: 355px;
+      height: 70px;
+    }
+  }
+
+  .modal-form-call__button span {
+    display: initial;
+  }
+
+  .modal-form-call__icon {
+    width: 35px;
+    height: 35px;
+    top: 22px;
+    left: 22px;
+  }
+}

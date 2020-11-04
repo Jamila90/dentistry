@@ -1,0 +1,121 @@
+.form-callme__wrap {
+  margin-bottom: 31px;
+}
+
+.form-callme__wrap h2 {
+  display: none;
+}
+
+.form-callme__wrap p {
+  display: none;
+}
+
+.form-callme__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form-callme__item {
+  margin-bottom: 16px;
+}
+
+.form-callme__item input {
+  width: 100%;
+  padding: 10px 0 5px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid rgb(160, 160, 160);
+  color: rgba(255, 34, 114, 1);
+
+  &::placeholder {
+    font-size: 15px;
+    color: rgba(163, 163, 163, 1);
+  }
+
+  &:active,
+  &:focus {
+    border-color: rgba(255, 0, 0, 1);
+  }
+}
+
+.form-callme__btn {
+  position: relative;
+  border: none;
+  padding: 14px 60px;
+  font-size: 15px;
+  background: linear-gradient(266deg, rgba(255, 0, 0, 1) 0%, rgba(255, 34, 114, 1) 100%);
+  box-shadow: 0 0 12px 3px rgba(255, 0, 0, 0.14);
+  text-transform: none;
+  color: white;
+  cursor: url("../img/icon-cursor.svg"), pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 244px;
+    height: 59px;
+    border: 1.5px solid rgba(255, 198, 218, 1);
+    border-radius: 50px;
+    top: -6px;
+    left: -6px;
+  }
+
+  &:hover {
+    background: linear-gradient(258deg, rgba(255, 57, 69, 1) 0%, rgba(255, 73, 150, 1) 100%);
+    box-shadow: 0 0 7px 7px rgba(255, 0, 0, 0.14);
+  }
+
+  &:active {
+    background: linear-gradient(280deg, rgba(221, 0, 0, 1) 0%, rgba(248, 0, 89, 1) 100%);
+  }
+}
+
+.form-callme__btn:hover::before {
+  border: 2px solid rgba(255, 73, 150, 1);
+}
+
+.form-callme__btn:active::before {
+  border: 2px solid rgba(248, 0, 89, 1);
+}
+
+@media only screen and (min-width: 768px) {
+  .form-callme {
+    padding: 0 114px 0 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .form-callme__wrap {
+    margin-bottom: 37px;
+  }
+
+  .form-callme__item {
+    margin-bottom: 16px;
+  }
+
+  .form-callme__item input {
+    padding: 20px 0 5px;
+
+    &::placeholder {
+      font-size: 18px;
+    }
+  }
+
+  .form-callme__btn {
+    font-size: 18px;
+    margin-left: 8px;
+    padding: 18px 65px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 279px;
+      height: 71px;
+      border: 1.5px solid #ffc6da;
+      border-radius: 50px;
+      top: -7px;
+      left: -6px;
+    }
+  }
+}
