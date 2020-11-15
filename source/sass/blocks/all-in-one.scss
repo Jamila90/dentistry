@@ -1,99 +1,144 @@
+.all-in-one {
+	position: relative;
+	overflow: hidden;
+
+	&::before {
+		content: '';
+		position: absolute;
+		bottom: 37px;
+		right: -70px;
+		width: 204px;
+		height: 152px;
+		background-image: url('../img/img-dentist-chair-mob@1x.png');
+		background-repeat: no-repeat;
+		background-size: 204px 152px;
+	}
+}
+
 .all-in-one__wrap {
-  max-width: 320px;
-  margin: 0 auto;
-  padding: 35px 13px 0;
+	max-width: 320px;
+	margin: 0 auto;
+	padding: 39px 13px 0;
 }
 
 .all-in-one__wrap h2 {
-  margin: 0;
-  font-size: 24px;
-  font-weight: normal;
-  color: rgb(28, 157, 229);
-  text-align: center;
+	margin: 0;
+	font-size: 24px;
+	font-weight: normal;
+	color: rgb(28, 157, 229);
+	text-align: center;
 }
 
 .all-in-one__wrap p {
-  margin: 0;
-  font-size: 12px;
-  letter-spacing: -0.1px;
-  color: rgba(160, 160, 160, 1);
+	margin: 0;
+	font-size: 12px;
+	letter-spacing: -0.1px;
+	color: rgba(160, 160, 160, 1);
 }
 
 .all-in-one__wrap span {
-  display: block;
-  text-align: center;
-  font-size: 10px;
-  color: rgba(28, 157, 229, 1);
+	display: block;
+	text-align: center;
+	font-size: 10px;
+	color: rgba(28, 157, 229, 1);
 }
 
 .all-in-one__graph-up {
-  width: 100%;
-  height: 120px;
-  background-image: url("../img/grafic-up-mob@1x.png");
-  background-repeat: no-repeat;
-  background-position: 2px 9px;
+	width: 100%;
+	height: 120px;
+	background-image: url('../img/grafic-up-mob@1x.png');
+	background-repeat: no-repeat;
+	background-position: 2px 9px;
 }
 
 .all-in-one__graph-down {
-  width: 100%;
-  height: 220px;
-  background-image: url("../img/grafic-down-mob@1x.png");
-  background-repeat: no-repeat;
-  background-position: -12px 15px;
+	width: 100%;
+	height: 220px;
+	background-image: url('../img/grafic-down-mob@1x.png');
+	background-repeat: no-repeat;
+	background-position: -12px 15px;
 }
 
 @media only screen and (min-width: 768px) {
-  .all-in-one__wrap {
-    max-width: 768px;
-    padding: 35px 45px 25px;
-  }
+	.all-in-one {
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: -5px;
+			left: -160px;
+			width: 300px;
+		 height: 200px;
+			background-image: url('../img/img-dentist-chair@1x.png');
+			background-repeat: no-repeat;
+			background-size: 300px 200px;
+		}
+	}
 
-  .all-in-one__wrap p {
-    text-align: center;
-  }
+	.all-in-one__wrap {
+		max-width: 768px;
+		padding: 35px 45px 25px;
+	}
 
-  .all-in-one__graph-up,
-  .all-in-one__graph-down {
-    display: none;
-    background-image: none;
-  }
+	.all-in-one__wrap p {
+		text-align: center;
+	}
 
-  .all-in-one__graph {
-    width: 100%;
-    height: 220px;
-    background-image: url("../img/grafic@1x.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-  }
+	.all-in-one__graph-up,
+	.all-in-one__graph-down {
+		display: none;
+		background-image: none;
+	}
+
+	.all-in-one__graph {
+		width: 100%;
+		height: 220px;
+		background-image: url('../img/grafic@1x.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
 }
 
 @media only screen and (min-width: 1440px) {
-  .all-in-one__wrap {
-    max-width: 1200px;
-    padding: 54px 45px 25px;
-  }
+	.all-in-one {
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: -70px;
+			left: 0;
+			width: 573px;
+			height: 428px;
+			background-image: url('../img/img-dentist-chair@1x.png');
+			background-repeat: no-repeat;
+			background-size: 573px 428px;
+		}
+	}
 
-  .all-in-one__wrap h2 {
-    margin-bottom: 12px;
-    font-size: 48px;
-  }
+	.all-in-one__wrap {
+		max-width: 1200px;
+		padding: 54px 45px 25px;
+	}
 
-  .all-in-one__wrap h2 br {
-    display: none;
-  }
+	.all-in-one__wrap h2 {
+		margin-bottom: 12px;
+		font-size: 48px;
+	}
 
-  .all-in-one__wrap p {
-    margin-bottom: 12px;
-    font-size: 22px;
-  }
+	.all-in-one__wrap h2 br {
+		display: none;
+	}
 
-  .all-in-one__wrap span {
-    margin-bottom: 40px;
-    font-size: 18px;
-  }
+	.all-in-one__wrap p {
+		margin-bottom: 12px;
+		font-size: 22px;
+	}
 
-  .all-in-one__graph {
-    height: 253px;
-  }
+	.all-in-one__wrap span {
+		margin-bottom: 40px;
+		font-size: 18px;
+	}
+
+	.all-in-one__graph {
+		height: 253px;
+	}
 }

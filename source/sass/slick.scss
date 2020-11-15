@@ -1,203 +1,507 @@
 /* Слайдер общие стили */
 .slick-slider {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-width: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-width: 0;
 }
+
 /* Ограничивающая оболочка */
 .slick-list {
-  margin: 0 auto;
-  height: auto;
-  min-width: 0;
-  display: flex;
-  max-width: 320px;
+	margin: 0 auto;
+	height: auto;
+	min-width: 0;
+	display: flex;
+	max-width: 320px;
 }
+
 /* Лента слайдов */
 .slick-track {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .slick-slide {
-  display: flex;
+	display: flex;
+}
+
+//Стили для слайдера в блоке Здоровые  зубы
+.healthy-teeth__list-wrap .slick-list {
+	padding: 0 65px !important; /* stylelint-disable-line */
+	//Использовала для переопределения стилей плагина
+}
+
+.healthy-teeth__list-wrap .slick-arrow {
+	display: none !important; /* stylelint-disable-line */
+	//Использовала для переопределения стилей плагина
 }
 
 .healthy-teeth__item-slide.slick-slide {
-  width: 201px !important; /* stylelint-disable-line */  //Использовала для переопределения стилей плагина
-  height: 415px !important; /* stylelint-disable-line */  //Использовала для переопределения стилей плагина
+	width: 201px !important; /* stylelint-disable-line */
+	//Использовала для переопределения стилей плагина
+	height: 415px !important; /* stylelint-disable-line */
+	//Использовала для переопределения стилей плагина
+	align-items: center;
+	padding-top: 35px;
 }
 
 .healthy-teeth__item-slide {
-  justify-content: center;
-  filter: blur(1px);
+	justify-content: center;
+	filter: blur(1px);
 }
 
 .healthy-teeth__item-slide.slick-center {
-  filter: blur(0);
-  transform: scale(1.1);
+	filter: blur(0);
+	transform: scale(1.1);
+	align-items: center;
+	margin: 0 20px;
+	padding-top: 0;
 }
 
 .healthy-teeth__container .slick-dots {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-  z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 140px;
+	margin: 0;
+	z-index: 1;
 }
 
 .healthy-teeth__container .slick-dots li {
-  list-style: none;
-  margin-right: 0;
-  width: 10px;
-  height: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	list-style: none;
+	margin-right: 0;
+	width: 10px;
+	height: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .healthy-teeth__container .slick-dots button {
-  font-size: 0;
-  width: 5px;
-  height: 5px;
-  padding: 0;
-  border-radius: 50%;
-  border: none;
-  background-color: rgba(159, 219, 236, 1);
-  cursor: url("../img/icon-cursor.svg"), pointer;
+	font-size: 0;
+	width: 5px;
+	height: 5px;
+	padding: 0;
+	border-radius: 50%;
+	border: none;
+	background-color: rgba(159, 219, 236, 1);
+	cursor: url('../img/icon-cursor.svg'), pointer;
 }
 
 .healthy-teeth__container .slick-dots li.slick-active button {
-  width: 10px;
-  height: 10px;
-  background-color: transparent;
-  background-image: url("../img/icon-active-dots.svg");
-  background-repeat: no-repeat;
-  background-size: 10px 10px;
-  background-position: 0 0;
+	width: 10px;
+	height: 10px;
+	background-color: transparent;
+	background-image: url('../img/icon-active-dots.svg');
+	background-repeat: no-repeat;
+	background-size: 10px 10px;
+	background-position: 0 0;
 
-  &:hover {
-    opacity: 0.7;
-  }
+	&:hover {
+		opacity: 0.7;
+	}
 }
 
 @media only screen and (min-width: 768px) {
-  .healthy-teeth__list-wrap .slick-list {
-    max-width: 678px;
-  }
+	.healthy-teeth__list-wrap .slick-list {
+		max-width: 600px;
+		overflow: hidden;
+		margin: 0 auto;
+		padding: 0 200px !important; /* stylelint-disable-line */
+		//Использовала для переопределения стилей плагина
+	}
+
+	.healthy-teeth__list-wrap.slick-slider {
+		position: relative;
+		margin: 0 auto;
+		font-size: 0;
+	}
+
+	.healthy-teeth__list-wrap .slick-track {
+		padding: 100px 0 75px;
+	}
+
+	.healthy-teeth__item-slide.slick-slide {
+		margin: 0 10px;
+	}
+
+	.healthy-teeth__item-slide.slick-center {
+		transform: scale(1.4);
+		margin: 0 20px;
+		padding: 0;
+	}
+
+	.healthy-teeth__list-wrap .slick-arrow {
+		display: block !important; /* stylelint-disable-line */
+		//Использовала для переопределения стилей плагина
+	}
+
+	.healthy-teeth__list-wrap .slick-prev {
+		position: absolute;
+		top: 50%;
+		left: -55px;
+		width: 45px;
+		height: 45px;
+		background-color: transparent;
+		background-image: url('../img/icon-arrow-left.svg');
+		background-repeat: no-repeat;
+		background-size: 45px 45px;
+		border: none;
+		cursor: url('../img/icon-cursor.svg'), pointer;
+
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+
+	.healthy-teeth__list-wrap .slick-next {
+		position: absolute;
+		right: -55px;
+		top: 50%;
+		width: 45px;
+		height: 45px;
+		background-color: transparent;
+		background-image: url('../img/icon-arrow-right.svg');
+		background-repeat: no-repeat;
+		background-size: 45px 45px;
+		border: none;
+		cursor: url('../img/icon-cursor.svg'), pointer;
+
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+
+	.healthy-teeth__container .slick-dots li {
+		width: 15px;
+		height: 15px;
+	}
+
+	.healthy-teeth__container .slick-dots button {
+		font-size: 0;
+		width: 6px;
+		height: 6px;
+	}
+
+	.healthy-teeth__container .slick-dots li.slick-active button {
+		width: 15px;
+		height: 15px;
+		background-size: 15px 15px;
+
+		&:hover {
+			opacity: 0.7;
+		}
+	}
 }
 
 @media only screen and (min-width: 1440px) {
-  .healthy-teeth__list-wrap .slick-list {
-    max-width: 1200px;
-    flex-direction: row;
-  }
+	.healthy-teeth__list-wrap .slick-list {
+		max-width: 700px;
+		overflow: hidden;
+		margin: 0 auto;
+		padding: 0 230px !important; /* stylelint-disable-line */
+		//Использовала для переопределения стилей плагина
+	}
 
-  .healthy-teeth__list-wrap .slick-arrow {
-    position: absolute;
-    font-size: 0;
-    z-index: 10;
-  }
+	.healthy-teeth__list-wrap .slick-arrow {
+		display: block !important; /* stylelint-disable-line */
+		//Использовала для переопределения стилей плагина
+	}
 
-  .healthy-teeth__list-wrap .slick-prev {
-    top: 0;
-    left: 0;
-    width: 57px;
-    height: 57px;
-    background-color: transparent;
-    background-image: url("../img/icon-arrow-left.svg");
-    background-repeat: no-repeat;
-    background-size: 57px 57px;
-    border: none;
-    cursor: url("../img/icon-cursor.svg"), pointer;
+	.healthy-teeth__list-wrap .slick-arrow {
+		position: absolute;
+		font-size: 0;
+		z-index: 10;
+	}
 
-    &:hover {
-      opacity: 0.7;
-    }
-  }
+	.healthy-teeth__list-wrap .slick-prev {
+		top: 43%;
+		left: -100px;
+		width: 60px;
+		height: 60px;
+		background-color: transparent;
+		background-image: url('../img/icon-arrow-left.svg');
+		background-repeat: no-repeat;
+		background-size: 57px 57px;
+		border: none;
+		cursor: url('../img/icon-cursor.svg'), pointer;
 
-  .healthy-teeth__list-wrap .slick-next {
-    right: 0;
-    top: 0;
-    width: 57px;
-    height: 57px;
-    background-color: transparent;
-    background-image: url("../img/icon-arrow-right.svg");
-    background-repeat: no-repeat;
-    background-size: 57px 57px;
-    border: none;
-    cursor: url("../img/icon-cursor.svg"), pointer;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
 
-    &:hover {
-      opacity: 0.7;
-    }
-  }
+	.healthy-teeth__list-wrap .slick-next {
+		right: -107px;
+		top: 43%;
+		width: 60px;
+		height: 60px;
+		background-color: transparent;
+		background-image: url('../img/icon-arrow-right.svg');
+		background-repeat: no-repeat;
+		background-size: 57px 57px;
+		border: none;
+		cursor: url('../img/icon-cursor.svg'), pointer;
+
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+
+	.healthy-teeth__item-slide.slick-center {
+		transform: scale(1.7) !important; /* stylelint-disable-line */
+		//Использовала для переопределения стилей плагина
+		margin: 0 50px !important; /* stylelint-disable-line */
+		//Использовала для переопределения стилей плагина;;
+		padding: 0 0 0 !important; /* stylelint-disable-line */
+		//Использовала для переопределения стилей плагина;
+	}
+
+	.healthy-teeth__item-slide.slick-slide {
+		transform: scale(1.2);
+		padding-top: 90px;
+		margin: 0 40px;
+	}
+
+	.healthy-teeth__list-wrap .slick-track {
+		padding: 100px 0 70px;
+	}
 }
 
+//Конец стилей для слайдера в блоке Здоровые зубы
+
+//Стили для слайдера в блоке Наши Врачи
 .our-doctors__list-mini-wrap.slick-slider {
-  display: flex;
-  flex-direction: row;
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
 }
 
 .our-doctors__item-slide-wrap.slick-slide {
-  width: 75px !important; /* stylelint-disable-line */  //Использовала для переопределения стилей плагина
+	width: 75px !important; /* stylelint-disable-line */
+	//Использовала для переопределения стилей плагина
+	margin-right: 10px;
+	opacity: 0.5;
+}
+
+.our-doctors__list-mini-wrap .slick-arrow {
+	display: none!important;
+}
+
+.our-doctors__item-slide-wrap.slick-current.slick-center {
+	opacity: 1;
 }
 
 .our-doctors__list-mini-wrap .slick-list {
-  overflow: hidden;
+	overflow: hidden;
+	max-width: 302px;
+	padding-bottom: 71px !important; /* stylelint-disable-line */
+	//Использовала для переопределения стилей плагина;
+	justify-content: center;
+	align-items: center;
+}
+
+.our-doctors__item-slide-wrap.slick-current.slick-center {
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		bottom: 4px;
+		left: -1px;
+		width: 67px;
+		height: 65px;
+		background-image: url('../img/active-round.svg');
+		background-repeat: no-repeat;
+		background-size: 67px 65px;
+	}
+}
+
+.our-doctors__item-slide-wrap--doc1.slick-current.slick-center p {
+	position: absolute;
+	display: block;
+	width: 250px;
+	left: 19px;
+	bottom: -67px;
+}
+
+.our-doctors__item-slide-wrap--doc2.slick-current.slick-center p {
+	position: absolute;
+	display: block;
+	width: 250px;
+	left: -58px;
+	bottom: -69px;
+}
+
+.our-doctors__item-slide-wrap--doc3.slick-current.slick-center p {
+	position: absolute;
+	display: block;
+	width: 250px;
+	left: -135px;
+	bottom: -69px;
+}
+
+.our-doctors__item-slide-wrap--doc4.slick-current.slick-center p {
+	position: absolute;
+	display: block;
+	width: 250px;
+	left: -212px;
+	bottom: -65px;
+}
+
+.our-doctors__list-big-wrap .slick-list {
+	overflow: hidden;
 }
 
 .our-doctors__list-big-wrap.slick-slider {
-  display: flex;
-  flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 
 .our-doctors__list-big-wrap {
-  position: relative;
+	position: relative;
 }
 
 .our-doctors__list-big-wrap .slick-track {
-  align-items: inherit;
+	align-items: inherit;
 }
 
 .our-doctors__list-big-wrap .slick-arrow {
-  position: absolute;
-  font-size: 0;
-  z-index: 10;
+	position: absolute;
+	font-size: 0;
+	z-index: 10;
+}
+
+.our-doctors__item-slide-big.slick-slide {
+	width: 479px !important; /* stylelint-disable-line */
+	//Использовала для переопределения стилей плагина;
+	height: 520px !important; /* stylelint-disable-line */
+	//Использовала для переопределения стилей плагина;
 }
 
 .our-doctors__list-big-wrap .slick-prev {
-  top: 30%;
-  left: 15px;
-  width: 16px;
-  height: 32px;
-  background-color: transparent;
-  background-image: url("../img/icon-arrow-left-slider.svg");
-  background-repeat: no-repeat;
-  background-size: 16px 32px;
-  border: none;
-  cursor: url("../img/icon-cursor.svg"), pointer;
+	top: 30%;
+	left: 15px;
+	width: 16px;
+	height: 32px;
+	background-color: transparent;
+	background-image: url('../img/icon-arrow-left-slider.svg');
+	background-repeat: no-repeat;
+	background-size: 16px 32px;
+	border: none;
+	cursor: url('../img/icon-cursor.svg'), pointer;
 
-  &:hover {
-    opacity: 0.7;
-  }
+	&:hover {
+		opacity: 0.7;
+	}
 }
 
 .our-doctors__list-big-wrap .slick-next {
-  right: 15px;
-  top: 30%;
-  width: 16px;
-  height: 32px;
-  background-color: transparent;
-  background-image: url("../img/icon-arrow-right-slider.svg");
-  background-repeat: no-repeat;
-  background-size: 16px 32px;
-  border: none;
-  cursor: url("../img/icon-cursor.svg"), pointer;
+	right: 15px;
+	top: 30%;
+	width: 16px;
+	height: 32px;
+	background-color: transparent;
+	background-image: url('../img/icon-arrow-right-slider.svg');
+	background-repeat: no-repeat;
+	background-size: 16px 32px;
+	border: none;
+	cursor: url('../img/icon-cursor.svg'), pointer;
 
-  &:hover {
-    opacity: 0.7;
-  }
+	&:hover {
+		opacity: 0.7;
+	}
 }
+
+@media only screen and (min-width: 1440px) {
+	.our-doctors__list-mini-wrap.slick-slider {
+		margin: 0;
+		height: 470px;
+		overflow: hidden;
+	}
+
+	.our-doctors__item-slide-wrap.slick-slide {
+		height: 100px;
+		width: 386px !important;
+	}
+
+	.our-doctors__list-big-wrap .slick-list {
+		overflow: hidden;
+		max-width: 460px;
+	}
+
+	.our-doctors__item-slide-big.slick-slide {
+		width: 480px!important;
+		height: 520px!important;
+	}
+
+	.our-doctors__item-slide-wrap.slick-current.slick-center p {
+		display: none;
+	}
+
+	.our-doctors__list-mini-wrap .slick-track {
+		display: block;
+		margin-left: 435px;
+	}
+
+	.our-doctors__list-mini-wrap .slick-list {
+		padding: 0 400px 105px 0!important;
+		overflow: visible;
+		height: 470px!important;
+		max-width: 386px;
+	}
+
+	.our-doctors__item-slide-wrap.slick-current.slick-center::before {
+		bottom: 11px;
+		left: 45px;
+	}
+
+	.our-doctors__list-mini-wrap .slick-arrow {
+		position: absolute;
+		display: block!important;
+		font-size: 0;
+		z-index: 10;
+	}
+
+	.our-doctors__list-mini-wrap .slick-prev {
+		transform: rotate(90deg);
+		left: 19%;
+		top: -40px;
+		width: 10px;
+		height: 19px;
+		background-color: transparent;
+		background-image: url('../img/icon-arrow-left-slider.svg');
+		background-repeat: no-repeat;
+		background-size: 10px 19px;
+		border: none;
+		cursor: url('../img/icon-cursor.svg'), pointer;
+
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+
+	.our-doctors__list-mini-wrap .slick-next {
+		transform: rotate(90deg);
+		left: 20%;
+		bottom: -9%;
+		width: 10px;
+		height: 19px;
+		background-color: transparent;
+		background-image: url('../img/icon-arrow-right-slider.svg');
+		background-repeat: no-repeat;
+		background-size: 10px 19px;
+		border: none;
+		cursor: url('../img/icon-cursor.svg'), pointer;
+
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+
+	.our-doctors__list-big-wrap .slick-arrow {
+		display: none !important;
+	}
+}
+//Конец стилей для слайдера в блоке Наши Врачи

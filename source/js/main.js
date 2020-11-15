@@ -1,5 +1,6 @@
 'use strict';
 
+let mainContent = document.querySelector('.main-content');
 let mainHeader = document.querySelector('.main-header');
 let mainNav = document.querySelector('.main-header__nav');
 let toggleBtn = document.querySelector('.main-header__toggle');
@@ -44,56 +45,74 @@ mainHeader.classList.remove('main-header__nav--nojs');
 toggleBtn.addEventListener('click', function () {
   mainNav.classList.toggle('nav--closed');
   toggleBtn.classList.toggle('main-header__toggle--closed');
+  mainContent.classList.toggle('main-content--none');
 });
 
-
-$(document).ready(function () {
-  $('.faq__question-trigger').click(function () {
-    $(this).next('.faq__question-content').slideToggle(200);
+//Аккардеон
+const ready = $(document).ready(function () {
+  $('.faq__question-item').click(function () {
+    $(this).find('.faq__question-content').toggleClass('faq__question-content--show').slideToggle(400);
+    $(this).toggleClass('faq__question-item--up')
+      .siblings('.faq__question-item--up');
   });
 
-  $('.healthy-teeth__list-wrap').slick({
-    arrows: false,
-    centerMode: true,
-    centerPadding: '65px',
-    slidesToShow: 1,
-    infinite: true,
-    dots: true,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerPadding: '85px'
-        }
-      },
-      {
-        breakpoint: 1440,
-        settings: {
-          arrows: true,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerPadding: '105px'
-        }
-      }
-    ]
-  });
+//Слайдер блока Здоровые зубы
+	$('.healthy-teeth__list-wrap').slick({
+		arrows: true,
+		centerMode: true,
+		centerPadding: '75px',
+		slidesToShow: 1,
+		infinite: true,
+		dots: true,
+		speed: 600,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					centerPadding: '85px',
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				},
+			},
+			{
+				breakpoint: 1440,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				},
+			},
+		],
+	});
 
-  $('.our-doctors__list-mini-wrap').slick({
-    arrows: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    infinite: true,
-    centerMode: true,
-    centerPadding: '15px',
-    asNavFor: '.our-doctors__list-big-wrap'
-  });
-  $('.our-doctors__list-big-wrap').slick({
-    arrows: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    infinite: true,
-    asNavFor: '.our-doctors__list-mini-wrap'
-  });
+	//Слайдер в блоке Наши врачи
+	$('.our-doctors__list-mini-wrap').slick({
+		arrows: true,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		centerMode: true,
+		centerPadding: '160px',
+		asNavFor: '.our-doctors__list-big-wrap',
+		focusOnSelect: true,
+		vertical: false,
+		infinite: false,
+		mobileFirst: true,
+		responsive: [
+			{
+				breakpoint: 1440,
+				settings: {
+					vertical: true,
+					verticalSwiping: true,
+					slidesToScroll: 1,
+					infinite: true,
+					centerMode: true
+				},
+			},
+		],
+	});
+	$('.our-doctors__list-big-wrap').slick({
+		arrows: true,
+		asNavFor: '.our-doctors__list-mini-wrap',
+	});
+
+  $('.gift__img-wrap').beforeAfter();
 });

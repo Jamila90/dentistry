@@ -3,7 +3,7 @@
 const gulp = require('gulp');
 const plumber = require('gulp-plumber');
 const sourcemap = require('gulp-sourcemaps');
-const sass = require('gulp-sass');
+const sass = require('gulp-dart-sass');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const server = require('browser-sync').create();
@@ -15,13 +15,14 @@ const svgstore = require('gulp-svgstore');
 const posthtml = require('gulp-posthtml');
 const include = require('posthtml-include');
 const del = require('del');
+const twig = require('gulp-twig');
 
 
 gulp.task('css', function () {
   return gulp.src('source/sass/style.scss')
       .pipe(plumber())
       .pipe(sourcemap.init())
-      .pipe(sass())
+      .pipe(sass().on('error', sass.logError))
       .pipe(postcss([autoprefixer()]))
       .pipe(gulp.dest('build/css'))
       .pipe(csso())
@@ -30,6 +31,7 @@ gulp.task('css', function () {
       .pipe(gulp.dest('build/css'))
       .pipe(server.stream());
 });
+
 
 gulp.task('server', function () {
   server.init({
@@ -41,8 +43,8 @@ gulp.task('server', function () {
   });
 
   gulp.watch('source/sass/**/*.{scss,sass}', gulp.series('css', 'refresh'));
-  gulp.watch('source/img/icon-*.svg', gulp.series('sprite', 'html', 'refresh'));
-  gulp.watch('source/*.html', gulp.series('html', 'refresh'));
+  gulp.watch('source/img/icon-*.svg', gulp.series('sprite', 'twig', 'refresh'));
+  gulp.watch('source/*.twig', gulp.series('twig', 'refresh'));
   gulp.watch('source/js/*.js', gulp.series('copy', 'refresh'));
 });
 
@@ -76,11 +78,12 @@ gulp.task('sprite', function () {
       .pipe(gulp.dest('build/img'));
 });
 
-gulp.task('html', function () {
-  return gulp.src('source/*.html')
+gulp.task('twig', function () {
+  return gulp.src('source/*.twig')
       .pipe(posthtml([
         include()
       ]))
+      .pipe(twig())
       .pipe(gulp.dest('build'));
 });
 
@@ -100,5 +103,5 @@ gulp.task('clean', function () {
   return del('build');
 });
 
-gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'html'));
+gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'twig'));
 gulp.task('start', gulp.series('build', 'server'));

@@ -1,0 +1,30 @@
+{% block content %}
+  <section class="problems">
+    <div class="problems__wrap">
+      <h2><span class="problems__which">А какие у Вас </span><span class="problems__teeth">проблемы с зубами?</span></h2>
+      <p>проконсультируйтесь с<em>о</em> <span class="problems__practice">практикующим</span> <span class="problems__dentist"> стоматологом</span></p>
+      <form action="#" method="post" class="form">
+        <div class="form__wrap">
+          <h2>Записаться на консультацию</h2>
+          <p class="form__descr form__descr&#45;&#45;mob">Врач осмотрит Вас и поставит диагноз.<br> Вы получите план лечения и стоимость.</p>
+          <p class="form__descr form__descr&#45;&#45;desktop">Врач осмотрит Вас и поставит диагноз.<br> Вы получите план лечения со сроками и стоимостью.</p>
+          <ul class="form__list">
+            <li class="form__item">
+              <label for="name"></label>
+              <input type="text" name="name" id="name" placeholder="Ваше имя" required>
+            </li>
+            <li class="form__item">
+              <label for="email"></label>
+              <input type="email" name="email" id="email" placeholder="Ваш номер телефона" required>
+            </li>
+          </ul>
+          <button class="form__btn button" type="submit" aria-label="Кнопка для отправки формы с проблемой">Записаться</button>
+        </div>
+      </form>
+      <div class="problems__contacts-wrap">
+        <p class="problems__descr problems__descr&#45;&#45;doctor">Главный врач клиники/стоматолог-ортопед<br><span> Зелим Хаманаев</span></p>
+        <p class="problems__descr problems__descr&#45;&#45;address">Адрес клиники<br><span> г. Москва, ул. Большая Филевская 25</span></p>
+      </div>
+    </div>
+  </section>
+{% endblock %}

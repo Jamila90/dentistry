@@ -8,6 +8,5 @@
   },
   "globals": {
     "require": true
-  },
-  "extends": "htmlacademy/es5"
+  }
 }

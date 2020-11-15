@@ -1,0 +1,25 @@
+{% block content %}
+  <section class="make-an-appointment">
+    <div class="make-an-appointment__wrap">
+      <h2>Узнать цены<br> и сроки, получить консультацию и записаться на приём</h2>
+      <p>Вы можете, заказать <strong>БЕСПЛАТНЫЙ</strong> звонок</p>
+      <form action="#" method="post" class="form-callme">
+        <div class="form-callme__wrap">
+          <h2>Есть дополнительные вопросы?</h2>
+          <p>Оставьте контакты и мы перезвоним Вам:</p>
+          <ul class="form-callme__list">
+            <li class="form-callme__item">
+              <label for="callme-name"></label>
+              <input type="text" name="name" id="callme-name" placeholder="Ваше имя" required>
+            </li>
+            <li class="form-callme__item">
+              <label for="callme-tel"></label>
+              <input type="tel" name="tel" id="callme-tel" placeholder="Ваш номер телефона" required>
+            </li>
+          </ul>
+        </div>
+        <button class="form-callme__btn button" type="submit" aria-label="Кнопка для отправки формы для записи">Позвоните мне</button>
+      </form>
+    </div>
+  </section>
+{% endblock %}

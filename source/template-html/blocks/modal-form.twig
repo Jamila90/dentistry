@@ -1,0 +1,27 @@
+{% block content %}
+  <div class="modal-form">
+    <form action="#" method="post" class="modal-form__get-plan">
+      <h2>Получить план лечения</h2>
+      <p>Заполните форму, чтобы узнать сроки и цены</p>
+      <ul class="modal-form__list">
+        <li class="modal-form__item">
+          <svg class="modal-form__icon" width="13" height="14" viewBox="0 0 30 30">
+            <use xlink:href="img/sprite_auto.svg#icon-user"></use>
+          </svg>
+          <label for="get-plan-name"></label>
+          <input type="text" name="get-plan-name" id="get-plan-name" placeholder="Введите Ваше имя" required>
+        </li>
+
+        <li class="modal-form__item">
+          <svg class="modal-form__icon" width="13" height="13" viewBox="0 0 30 30">
+            <use xlink:href="img/sprite_auto.svg#icon-form-phone"></use>
+          </svg>
+          <label for="get-plan-tel"></label>
+          <input type="tel" name="get-plan-tel" pattern="7[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" id="get-plan-tel" placeholder="+7 (927) 123-45-67" value="" maxlength="20">
+        </li>
+      </ul>
+      <button class="modal-form__button button" type="submit" aria-label="Кнопка для отправки формы">Узнать сроки и цены</button>
+      <button class="modal-form__toggle" type="button" aria-label="Модальное окно"></button>
+    </form>
+  </div>
+{% endblock %}

@@ -1,0 +1,45 @@
+<!doctype html>
+{% block content %}
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title> Elit Dent </title>
+  <link rel="preload" href="./fonts/mullerregular.woff2" type="font/woff2" as="font" crossorigin="">
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+<header class="main-header">
+  {% include "template-html/blocks/main-header.twig" %}
+  {% include "template-html/blocks/nav.twig" %}
+</header>
+<main class="main-content">
+  {% include "template-html/blocks/intro.twig" %}
+  {% include "template-html/blocks/gift.twig" %}
+  {% include "template-html/blocks/our-services.twig" %}
+  {% include "template-html/blocks/problems.twig" %}
+  {% include "template-html/blocks/trusts.twig" %}
+  {% include "template-html/blocks/healthy-teeth.twig" %}
+  {% include "template-html/blocks/faq.twig" %}
+  {% include "template-html/blocks/all-in-one.twig" %}
+  {% include "template-html/blocks/our-doctors.twig" %}
+  {% include "template-html/blocks/address.twig" %}
+  {% include "template-html/blocks/make-an-appointment.twig" %}
+</main>
+
+<footer class="footer-page">
+  {% include "template-html/blocks/footer-page.twig" %}
+</footer>
+
+{% include "template-html/blocks/modal-form.twig" %}
+{% include "template-html/blocks/modal-form-call.twig" %}
+{% include "template-html/blocks/modal-form-reception.twig" %}
+{% include "template-html/blocks/modal-accept.twig" %}
+
+{% block js %}
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+{% endblock js %}
+</body>
+</html>
+{% endblock %}

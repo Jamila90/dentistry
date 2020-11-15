@@ -1,71 +1,71 @@
 .healthy-teeth {
-  overflow: hidden;
+	overflow: hidden;
 }
 
 .healthy-teeth__wrap {
-  max-width: 320px;
-  margin: 0 auto;
-  padding-bottom: 40px;
+	max-width: 320px;
+	margin: 0 auto;
+	padding-bottom: 40px;
 }
 
 .healthy-teeth__wrap h2 {
-  margin: 0;
-  text-align: center;
-  padding: 0 45px;
-  font-weight: normal;
-  color: rgba(28, 157, 229, 1);
+	margin: 0;
+	text-align: center;
+	padding: 0 45px;
+	font-weight: normal;
+	color: rgba(28, 157, 229, 1);
 }
 
 .healthy-teeth__wrap p {
-  margin: 0 0 30px;
-  text-align: center;
-  color: rgb(160, 160, 160);
-  font-size: 12px;
+	margin: 0 0 30px;
+	text-align: center;
+	color: rgb(160, 160, 160);
+	font-size: 12px;
 }
 
 .healthy-teeth__container {
-  display: flex;
+	display: flex;
 }
 
 .healthy-teeth__list-wrap {
-  display: flex;
+	display: flex;
 }
 
 @media only screen and (min-width: 768px) {
-  .healthy-teeth__wrap {
-    max-width: 768px;
-    padding: 0 46px;
-  }
+	.healthy-teeth__wrap {
+		max-width: 668px;
+	}
 
-  .healthy-teeth__wrap p {
-    margin: 0 0 30px;
-  }
+	.healthy-teeth__wrap p {
+		margin: 0;
+	}
 }
 
 @media only screen and (min-width: 1440px) {
-  .healthy-teeth__wrap {
-    padding: 57px 46px 212px;
-    max-width: 1200px;
-  }
+	.healthy-teeth__wrap {
+		padding: 57px 46px 40px;
+		max-width: 1200px;
+	}
 
-  .healthy-teeth__wrap h2 {
-    margin-bottom: 15px;
-    font-size: 48px;
-  }
+	.healthy-teeth__wrap h2 {
+		margin-bottom: 15px;
+		font-size: 48px;
+	}
 
-  .healthy-teeth__wrap h2 br {
-    display: none;
-  }
+	.healthy-teeth__wrap h2 br {
+		display: none;
+	}
 
-  .healthy-teeth__wrap p {
-    font-size: 24px;
-  }
+	.healthy-teeth__wrap p {
+		font-size: 24px;
+		margin-bottom: 30px;
+	}
 
-  .healthy-teeth__container {
-    justify-content: center;
-  }
+	.healthy-teeth__container {
+		justify-content: center;
+	}
 
-  .healthy-teeth__list-wrap {
-    align-items: center;
-  }
+	.healthy-teeth__list-wrap {
+		align-items: center;
+	}
 }

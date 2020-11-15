@@ -1,0 +1,26 @@
+{% block content %}
+  <section class="gift">
+    <div class="gift__wrap">
+      <h2><span>В подарок</span> гигиеническая чистка</h2>
+      <p>при прохождении комплексного лечения</p>
+      <div class="gift__img-wrap">
+        <picture>
+          <source type="image/webp" srcset="img/white-teeth-mob@1x.webp 1x, img/white-teeth-mob@2x.webp 2x">
+          <source type="image/webp" srcset="img/white-teeth@1x.webp 1x, img/white-teeth@2x.webp 2x">
+          <img src="img/white-teeth@1x.png" srcset="img/white-teeth@1x.png 1x, img/white-teeth@2x.png 2x" width="709"
+               height="384" alt="Белые зубы" class="gift__img">
+        </picture>
+        <div class="gift__img-wrap resize">
+          <picture>
+            <source type="image/webp" srcset="img/yellow-teeth-mob@1x.webp 1x, img/yellow-teeth-mob@2x.webp 2x">
+            <source type="image/webp" srcset="img/yellow-teeth@1x.webp 1x, img/yellow-teeth@2x.webp 2x">
+            <img src="img/yellow-teeth@1x.png" srcset="img/yellow-teeth@1x.png 1x, img/yellow-teeth@2x.png 2x" width="708"
+                 height="384" alt="Желтые зубы" class="gift__img">
+          </picture>
+        </div>
+        <span class="gift__draggable handle"></span>
+      </div>
+      <span class="gift__subtitle"><strong>Переместите бегунок в бок</strong> и посмотрите, как преобразовалась улыбка!</span>
+    </div>
+  </section>
+{% endblock %}

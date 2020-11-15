@@ -1,211 +1,228 @@
 .form-faq {
-  padding: 0 10px 132px;
+	padding: 0 10px 132px;
 }
 
 .form-faq__wrap {
-  position: relative;
-  padding: 30px 17px;
-  background-image: url("../img/bg-form-mob@1x.png");
-  background-repeat: no-repeat;
+	position: relative;
+	padding: 27px 17px;
+	background-image: url('../img/bg-form-mob@1x.png');
+	background-repeat: no-repeat;
 
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: -70px;
-    right: -82px;
-    width: 191px;
-    height: 206px;
-    background-image: url("../img/tooth@1x.png");
-    background-repeat: no-repeat;
-    background-size: 120px 120px;
-  }
+	&::before {
+		content: '';
+		position: absolute;
+		bottom: -70px;
+		right: -82px;
+		width: 191px;
+		height: 206px;
+		background-image: url('../img/tooth@1x.png');
+		background-repeat: no-repeat;
+		background-size: 120px 120px;
+	}
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -105px;
-    width: 241px;
-    height: 125px;
-    background-image: url("../img/dentist-mob@1x.png");
-    z-index: 1;
-  }
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: -105px;
+		width: 241px;
+		height: 125px;
+		background-image: url('../img/dentist-mob@1x.png');
+		z-index: 1;
+	}
 }
 
 .form-faq__wrap h2 {
-  margin: 0 0 0;
-  font-weight: normal;
-  font-size: 16px;
+	margin: 0;
+	font-weight: normal;
+	font-size: 16px;
 }
 
 .form-faq__wrap p {
-  margin: 0;
-  font-size: 10px;
-  color: rgb(160, 160, 160);
+	margin: 0 0 9px;
+	line-height: 10px;
+	font-size: 10px;
+	color: rgb(160, 160, 160);
 }
 
 .form-faq__list {
-  margin: 0 0 17px;
-  padding: 0;
-  list-style: none;
-  max-width: 202px;
+	margin: 0 0 20px;
+	padding: 0;
+	list-style: none;
+	max-width: 202px;
 }
 
 .form-faq__item {
-  margin-bottom: 10px;
+	margin-bottom: 12px;
 }
 
-
 .form-faq__item input {
-  width: 100%;
-  padding-bottom: 3px;
-  border: none;
-  border-bottom: 1px solid rgb(160, 160, 160);
-  color: rgba(255, 34, 114, 1);
+	width: 100%;
+	padding-bottom: 3px;
+	border: none;
+	border-bottom: 1px solid rgb(160, 160, 160);
+	color: rgba(255, 34, 114, 1);
 
-  &::placeholder {
-    font-size: 15px;
-    color: rgba(163, 163, 163, 1);
-  }
+	&::placeholder {
+		font-family: "Muller", "Arial", sans-serif;
+		font-size: 10px;
+		color: rgba(163, 163, 163, 1);
+	}
 
-  &:active,
-  &:focus {
-    border-color: rgba(255, 0, 0, 1);
-  }
+	&:active,
+	&:focus {
+		border-color: rgba(255, 0, 0, 1);
+	}
 }
 
 .form-faq__btn {
-  position: relative;
-  border: none;
-  padding: 7px 52px;
-  font-size: 11px;
-  background: linear-gradient(266deg, rgba(255, 0, 0, 1) 0%, rgba(255, 34, 114, 1) 100%);
-  box-shadow: 0 0 12px 3px rgba(255, 0, 0, 0.14);
-  text-transform: none;
-  color: white;
-  cursor: url("../img/icon-cursor.svg"), pointer;
+	position: relative;
+	border: none;
+	padding: 7px 52px;
+	font-size: 11px;
+	background: linear-gradient(266deg, rgba(255, 0, 0, 1) 0%, rgba(255, 34, 114, 1) 100%);
+	box-shadow: 0 0 12px 3px rgba(255, 0, 0, 0.14);
+	text-transform: none;
+	color: white;
+	cursor: url('../img/icon-cursor.svg'), pointer;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 203px;
-    height: 44px;
-    border: 1.5px solid rgba(255, 198, 218, 1);
-    border-radius: 50px;
-    top: -5px;
-    left: -5px;
-  }
+	&::before {
+		content: '';
+		position: absolute;
+		width: 178px;
+		height: 44px;
+		border: 1.5px solid rgba(255, 198, 218, 1);
+		border-radius: 50px;
+		top: -5px;
+		left: -5px;
+	}
 
-  &:hover {
-    background: linear-gradient(258deg, rgba(255, 57, 69, 1) 0%, rgba(255, 73, 150, 1) 100%);
-    box-shadow: 0 0 7px 7px rgba(255, 0, 0, 0.14);
-  }
+	&:hover {
+		background: linear-gradient(258deg, rgba(255, 57, 69, 1) 0%, rgba(255, 73, 150, 1) 100%);
+		box-shadow: 0 0 7px 7px rgba(255, 0, 0, 0.14);
+	}
 
-  &:active {
-    background: linear-gradient(280deg, rgba(221, 0, 0, 1) 0%, rgba(248, 0, 89, 1) 100%);
-  }
+	&:active {
+		background: linear-gradient(280deg, rgba(221, 0, 0, 1) 0%, rgba(248, 0, 89, 1) 100%);
+	}
 }
 
 .form-faq__btn:hover::before {
-  border: 2px solid rgba(255, 73, 150, 1);
+	border: 2px solid rgba(255, 73, 150, 1);
 }
 
 .form-faq__btn:active::before {
-  border: 2px solid rgba(248, 0, 89, 1);
+	border: 2px solid rgba(248, 0, 89, 1);
+}
+
+.form-faq__sp1 {
+	display: block;
+}
+
+.form-faq__sp2 {
+	display: none;
 }
 
 @media only screen and (min-width: 768px) {
-  .form-faq {
-    padding: 43px 0;
-    width: 320px;
-  }
+	.form-faq {
+		padding: 43px 0;
+		width: 320px;
+	}
 
-  .form-faq__wrap {
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: -70px;
-      right: -65px;
-      width: 191px;
-      height: 206px;
-    }
+	.form-faq__wrap {
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: -70px;
+			right: -65px;
+			width: 191px;
+			height: 206px;
+		}
 
-    &::after {
-      left: 0;
-      bottom: -105px;
-      width: 241px;
-      height: 125px;
-    }
-  }
+		&::after {
+			left: 0;
+			bottom: -105px;
+			width: 241px;
+			height: 125px;
+		}
+	}
 }
 
 @media only screen and (min-width: 1440px) {
-  .form-faq {
-    padding: 50px 0;
-    width: 540px;
-  }
+	.form-faq {
+		padding: 50px 0;
+		width: 540px;
+	}
 
-  .form-faq__wrap {
-    padding: 53px 35px 195px 42px;
-    background-image: url("../img/bg-form@1x.png");
-    background-size: 545px 365px;
+	.form-faq__wrap {
+		padding: 53px 35px 195px 44px;
+		background-image: url('../img/bg-form@1x.png');
+		background-size: 525px 365px;
 
-    &::before {
-      bottom: 143px;
-      right: -5px;
-      width: 201px;
-      height: 223px;
-      background-size: 201px 223px;
-    }
+		&::before {
+			bottom: 143px;
+			right: -5px;
+			width: 201px;
+			height: 223px;
+			background-size: 201px 223px;
+		}
 
-    &::after {
-      left: 0;
-      bottom: -55px;
-      width: 423px;
-      height: 218px;
-      background-repeat: no-repeat;
-      background-size: 423px 218px;
-    }
-  }
+		&::after {
+			left: 0;
+			bottom: -55px;
+			width: 423px;
+			height: 218px;
+			background-repeat: no-repeat;
+			background-size: 423px 218px;
+		}
+	}
 
-  .form-faq__wrap h2 {
-    font-size: 24px;
-    padding: 0 27px;
-    margin-bottom: 5px;
-  }
+	.form-faq__wrap h2 {
+		font-size: 24px;
+		padding: 0 32px;
+		margin-bottom: 10px;
+	}
 
-  .form-faq__wrap p {
-    font-size: 14px;
-    padding: 0 72px;
-    margin-bottom: 19px;
-  }
+	.form-faq__wrap p {
+		font-size: 14px;
+		padding: 0 78px;
+		margin-bottom: 27px;
+	}
 
-  .form-faq__list {
-    max-width: 352px;
-    margin-bottom: 35px;
-  }
+	.form-faq__list {
+		max-width: 352px;
+		margin-bottom: 35px;
+	}
 
-  .form-faq__item {
-    margin-bottom: 23px;
-  }
+	.form-faq__item {
+		margin-bottom: 23px;
+	}
 
-  .form-faq__item input {
-    padding: 10px 0;
+	.form-faq__item input {
+		padding: 10px 0;
 
-    &::placeholder {
-      font-size: 18px;
-    }
-  }
+		&::placeholder {
+			font-size: 18px;
+		}
+	}
 
-  .form-faq__btn {
-    padding: 17px 61px;
-    font-size: 18px;
+	.form-faq__btn {
+		padding: 17px 61px;
+		font-size: 18px;
 
-    &::before {
-      width: 282px;
-      height: 70px;
-      top: -8px;
-      left: -7px;
-    }
-  }
+		&::before {
+			width: 292px;
+			height: 70px;
+			top: -8px;
+			left: -7px;
+		}
+	}
+
+	.form-faq__sp1 {
+		display: none;
+	}
+
+	.form-faq__sp2 {
+		display: block;
+	}
 }

@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
-  <title>Elit Dent</title>
+  <title> Elit Dent </title>
   <link rel="preload" href="./fonts/mullerregular.woff2" type="font/woff2" as="font" crossorigin="">
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
 <header class="main-header">
-  <a class="main-header__logo">
-    <picture>
-      <source media="(min-width: 1440px)" srcset="img/header-logo.svg">
-      <img src="img/header-logo.svg" width="315" height="49" alt="Логотип сайта Элит Дент" class="main-header__logo-img">
-    </picture>
-  </a>
-  <div class="main-header__nav main-header__nav--nojs nav">
+      <a class="main-header__logo">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/header-logo.svg">
+        <img src="img/header-logo.svg" width="315" height="49" alt="Логотип сайта Элит Дент" class="main-header__logo-img">
+      </picture>
+    </a>
+    <div class="main-header__nav main-header__nav--nojs nav">
     <ul class="nav__list">
       <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
       <li class="nav__item"><a href="#" class="nav__link">Услуги</a></li>
@@ -56,108 +56,120 @@
 </header>
 <main class="main-content">
   <section class="intro">
-    <div class="intro__wrap">
-      <div class="intro__text-wrap">
-        <h1> Мы лечим зубы <span>без боли и стресса</span></h1>
-        <p>в Московской стоматологии фиксированных цен “ЭлитДент”</p>
-        <span><strong>Получите план лечения зубов</strong> со сроками и стоимостью</span>
-      </div>
-      <button class="intro__btn button" type="button">Узнать сроки и цены</button>
+  <div class="intro__wrap">
+    <div class="intro__text-wrap">
+      <h1> Мы лечим зубы <span>без боли и стресса</span></h1>
+      <p>в Московской стоматологии фиксированных цен “ЭлитДент”</p>
+      <span><strong>Получите план лечения зубов</strong> со сроками и стоимостью</span>
     </div>
-  </section>
-  <section class="gift">
+    <button class="intro__btn button" type="button">Узнать сроки и цены</button>
+  </div>
+</section>
+    <section class="gift">
     <div class="gift__wrap">
       <h2><span>В подарок</span> гигиеническая чистка</h2>
       <p>при прохождении комплексного лечения</p>
-      <picture>
-        <source type="image/webp" srcset="img/white-teeth@1x.webp 1x, img/white-teeth@2x.webp 2x">
-        <img src="img/white-teeth@1x.png" srcset="img/white-teeth@1x.png 1x, img/white-teeth@2x.png 2x" width="709" height="384" alt="Белый зубы" class="gift__img">
-      </picture>
-      <div class="gift__scale">
-        <span class="gift__scale-badge"></span>
+      <div class="gift__img-wrap">
+        <picture>
+          <source type="image/webp" srcset="img/white-teeth-mob@1x.webp 1x, img/white-teeth-mob@2x.webp 2x">
+          <source type="image/webp" srcset="img/white-teeth@1x.webp 1x, img/white-teeth@2x.webp 2x">
+          <img src="img/white-teeth@1x.png" srcset="img/white-teeth@1x.png 1x, img/white-teeth@2x.png 2x" width="709"
+               height="384" alt="Белые зубы" class="gift__img">
+        </picture>
+        <div class="gift__img-wrap resize">
+          <picture>
+            <source type="image/webp" srcset="img/yellow-teeth-mob@1x.webp 1x, img/yellow-teeth-mob@2x.webp 2x">
+            <source type="image/webp" srcset="img/yellow-teeth@1x.webp 1x, img/yellow-teeth@2x.webp 2x">
+            <img src="img/yellow-teeth@1x.png" srcset="img/yellow-teeth@1x.png 1x, img/yellow-teeth@2x.png 2x" width="708"
+                 height="384" alt="Желтые зубы" class="gift__img">
+          </picture>
+        </div>
+        <span class="gift__draggable handle"></span>
       </div>
       <span class="gift__subtitle"><strong>Переместите бегунок в бок</strong> и посмотрите, как преобразовалась улыбка!</span>
     </div>
   </section>
-  <section class="our-services">
+    <section class="our-services">
     <div class="our-services__wrap">
       <h2>Все наши услуги</h2>
       <ul class="our-services__list">
-        <li class="our-services__item our-services__item--dentistry">
+        <li class="our-services__item our-services__item&#45;&#45;dentistry">
           <h3>Терапевтическая стоматология</h3>
           <p>Лечение кариеса Лечение пульпита Лечение периодонтита</p>
         </li>
-        <li class="our-services__item our-services__item--teeth">
+        <li class="our-services__item our-services__item&#45;&#45;teeth">
           <h3>Имплантация зубов</h3>
           <p>Тотальная имплантация Одномоментная имплантация<br> All-on-4 (все зубы на 4 имплантах) </p>
         </li>
-        <li class="our-services__item our-services__item--child">
+        <li class="our-services__item our-services__item&#45;&#45;child">
           <h3>Детская стоматология</h3>
           <p>Герметизация фиссур Лечение кариеса молочных зубов </p>
         </li>
-        <li class="our-services__item  our-services__item--orthopedics">
+        <li class="our-services__item  our-services__item&#45;&#45;orthopedics">
           <h3>Ортопедия</h3>
           <p>Съемное, несъёмное протезирование<br> Металлокерамические коронки<br> Безметалловая керамика</p>
         </li>
-        <li class="our-services__item our-services__item--surgery">
+        <li class="our-services__item our-services__item&#45;&#45;surgery">
           <h3>Хирургия</h3>
           <p>Удаление зуба Синус-лифтинг Костная пластика</p>
         </li>
-        <li class="our-services__item our-services__item--orthodontics">
+        <li class="our-services__item our-services__item&#45;&#45;orthodontics">
           <h3>Ортодонтия</h3>
           <p>Исправление прикуса с помощью брекет-системы Тренеры, пластинки</p>
         </li>
       </ul>
     </div>
   </section>
-  <section class="problems">
+    <section class="problems">
     <div class="problems__wrap">
       <h2><span class="problems__which">А какие у Вас </span><span class="problems__teeth">проблемы с зубами?</span></h2>
       <p>проконсультируйтесь с<em>о</em> <span class="problems__practice">практикующим</span> <span class="problems__dentist"> стоматологом</span></p>
       <form action="#" method="post" class="form">
         <div class="form__wrap">
           <h2>Записаться на консультацию</h2>
-          <p class="form__descr form__descr--mob">Врач осмотрит Вас и поставит диагноз.<br> Вы получите план лечения и стоимость.</p>
-          <p class="form__descr form__descr--desktop">Врач осмотрит Вас и поставит диагноз.<br> Вы получите план лечения со сроками и стоимостью.</p>
+          <p class="form__descr form__descr&#45;&#45;mob">Врач осмотрит Вас и поставит диагноз.<br> Вы получите план лечения и стоимость.</p>
+          <p class="form__descr form__descr&#45;&#45;desktop">Врач осмотрит Вас и поставит диагноз.<br> Вы получите план лечения со сроками и стоимостью.</p>
           <ul class="form__list">
             <li class="form__item">
               <label for="name"></label>
-              <input type="text" name="name" id="name" placeholder="Ваше имя" required="">
+              <input type="text" name="name" id="name" placeholder="Ваше имя" required>
             </li>
             <li class="form__item">
               <label for="email"></label>
-              <input type="email" name="email" id="email" placeholder="Ваш номер телефона" required="">
+              <input type="email" name="email" id="email" placeholder="Ваш номер телефона" required>
             </li>
           </ul>
           <button class="form__btn button" type="submit" aria-label="Кнопка для отправки формы с проблемой">Записаться</button>
         </div>
       </form>
       <div class="problems__contacts-wrap">
-        <p class="problems__descr problems__descr--doctor">Главный врач клиники/стоматолог-ортопед<br><span> Зелим Хаманаев</span></p>
-        <p class="problems__descr problems__descr--address">Адрес клиники<br><span> г. Москва, ул. Большая Филевская 25</span></p>
+        <p class="problems__descr problems__descr&#45;&#45;doctor">Главный врач клиники/стоматолог-ортопед<br><span> Зелим Хаманаев</span></p>
+        <p class="problems__descr problems__descr&#45;&#45;address">Адрес клиники<br><span> г. Москва, ул. Большая Филевская 25</span></p>
       </div>
     </div>
   </section>
-  <section class="trusts">
+    <section class="trusts">
     <div class="trusts__wrap">
       <h2><span>Нам доверяют</span><br> лечение зубов уже 7 лет</h2>
       <ul class="trusts__list">
-        <li class="trusts__item trusts__item--because">
+        <li class="trusts__item trusts__item&#45;&#45;because">
           <h3>потому что:</h3>
           <p>Наши врачи работают на <span class="trusts__equipment">дорогостоящем оборудовании.</span> Это повышает качество работы более чем<br> в 20 раз.</p>
         </li>
-        <li class="trusts__item trusts__item--because-of">
+        <li class="trusts__item trusts__item&#45;&#45;because-of">
           <h3>из-за того, что:</h3>
-          <p><span class="trusts__price">У нас фиксированные цены.</span><br> В нашей клинике<br> невозможно такое,<br> что один пациент<br> лечится на одну сумму,<br> а второй на другую при одинаковых видах услуг.</p>
+          <p><span class="trusts__price">У нас фиксированные цены.</span><br> В нашей клинике<br> невозможно такое,<br> что один пациент<br> лечится на одну сумму,<br> а второй на другую при
+            одинаковых видах услуг.</p>
         </li>
-        <li class="trusts__item trusts__item--and">
+        <li class="trusts__item trusts__item&#45;&#45;and">
           <h3>а также:</h3>
-          <p>Потому что у нас есть <span class="trusts__centre">собственный учебный центр.</span> Мы повышаем квалификацию своих специалистов, приглашая известных профессоров<br> и профессионалов стоматологии.</p>
+          <p>Потому что у нас есть <span class="trusts__centre">собственный учебный центр.</span> Мы повышаем квалификацию своих специалистов, приглашая известных профессоров<br> и профессионалов
+            стоматологии.</p>
         </li>
       </ul>
     </div>
   </section>
-  <section class="healthy-teeth">
+    <section class="healthy-teeth">
     <div class="healthy-teeth__wrap">
       <h2>Здоровые зубы<br> и красивые улыбки</h2>
       <p>наших счастливых клиентов</p>
@@ -197,63 +209,57 @@
       </div>
     </div>
   </section>
-  <section class="faq">
+    <section class="faq">
     <div class="faq__wrap">
       <div class="faq__wrap-questions">
         <h2>Частые вопросы клиентов</h2>
         <ul class="faq__question">
           <li class="faq__question-item">
             <h3>Консультация и план лечения бесплатны?</h3>
-            <div class="faq__question-trigger">
-            </div>
             <div class="faq__question-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, cum doloremque est, exercitationem ipsum itaque iure laboriosam magni minima neque nulla omnis possimus praesentium quia
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, cum doloremque est, exercitationem ipsum itaque iure laboriosam magni minima neque nulla omnis possimus praesentium
+                quia
                 quidem quo soluta vero voluptates.</p>
             </div>
           </li>
           <li class="faq__question-item">
             <h3>Как вы соблюдаете стерильность?</h3>
-            <div class="faq__question-trigger">
-            </div>
             <div class="faq__question-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, cum doloremque est, exercitationem ipsum itaque iure laboriosam magni minima neque nulla omnis possimus praesentium quia
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, cum doloremque est, exercitationem ipsum itaque iure laboriosam magni minima neque nulla omnis possimus praesentium
+                quia
                 quidem quo soluta vero voluptates.</p>
             </div>
           </li>
           <li class="faq__question-item">
             <h3>Как вы устраняете боль?</h3>
-            <div class="faq__question-trigger">
-            </div>
             <div class="faq__question-content">
-              <p>Равным образом рамки и место обучения кадров позволяет оценить значение модели развития.<br> Не следует,<br class="faq__question-br"> однако забывать, что рамки и место обучения кадров влечет<br class="faq__question-br">  за собой процесс
+              <p>Равным образом рамки и место обучения кадров позволяет оценить значение модели развития.<br> Не следует,<br class="faq__question-br"> однако забывать, что рамки и место обучения
+                кадров влечет<br class="faq__question-br"> за собой процесс
                 внедрения
                 новых предложений.</p>
             </div>
           </li>
           <li class="faq__question-item">
             <h3>У вас опытные врачи?</h3>
-            <div class="faq__question-trigger">
-            </div>
             <div class="faq__question-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, cum doloremque est, exercitationem ipsum itaque iure laboriosam magni minima neque nulla omnis possimus praesentium quia
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, cum doloremque est, exercitationem ipsum itaque iure laboriosam magni minima neque nulla omnis possimus praesentium
+                quia
                 quidem quo soluta vero voluptates.</p>
             </div>
           </li>
           <li class="faq__question-item">
             <h3>А с детьми вы работаете?</h3>
-            <div class="faq__question-trigger">
-            </div>
             <div class="faq__question-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, cum doloremque est, exercitationem ipsum itaque iure laboriosam magni minima neque nulla omnis possimus praesentium quia
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, cum doloremque est, exercitationem ipsum itaque iure laboriosam magni minima neque nulla omnis possimus praesentium
+                quia
                 quidem quo soluta vero voluptates.</p>
             </div>
           </li>
           <li class="faq__question-item">
             <h3>А даёте ли вы какие-нибудь гарантии?</h3>
-            <div class="faq__question-trigger">
-            </div>
             <div class="faq__question-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, cum doloremque est, exercitationem ipsum itaque iure laboriosam magni minima neque nulla omnis possimus praesentium quia
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, cum doloremque est, exercitationem ipsum itaque iure laboriosam magni minima neque nulla omnis possimus praesentium
+                quia
                 quidem quo soluta vero voluptates.</p>
             </div>
           </li>
@@ -266,19 +272,19 @@
           <ul class="form-faq__list">
             <li class="form-faq__item">
               <label for="faq-name"></label>
-              <input type="text" name="name" id="faq-name" placeholder="Ваше имя" required="">
+              <input type="text" name="name" id="faq-name" placeholder="Ваше имя" required>
             </li>
             <li class="form-faq__item">
               <label for="faq-tel"></label>
-              <input type="tel" name="tel" id="faq-tel" placeholder="Ваш номер телефона" required="">
+              <input type="tel" name="tel" id="faq-tel" placeholder="Ваш номер телефона" required>
             </li>
           </ul>
-          <button class="form-faq__btn button" type="submit" aria-label="Кнопка для отправки формы для записи">Заказать звонок</button>
+          <button class="form-faq__btn button" type="submit" aria-label="Кнопка для отправки формы для записи"><span class="form-faq__sp1">Записаться</span><span class="form-faq__sp2">Закакзать звонок</span></button>
         </div>
       </form>
     </div>
   </section>
-  <section class="all-in-one">
+    <section class="all-in-one">
     <div class="all-in-one__wrap">
       <h2>Все услуги<br> в одной клинике</h2>
       <p>от диагностики до восстановления зуба “под ключ”</p>
@@ -288,128 +294,174 @@
       <div class="all-in-one__graph-down"></div>
     </div>
   </section>
-  <section class="our-doctors">
-    <div class="our-doctors__wrap">
-      <h2>Наши врачи</h2>
-      <div class="our-doctors__container-wrap">
-        <div class="our-doctors__container-mini">
-          <div class="our-doctors__list-mini-wrap our-doctors__list-wrap--mini">
-            <div class="our-doctors__item-slide-wrap">
-              <h3>Имя Фамилия</h3>
-              <div class="our-doctors__item-slide">
-                <picture>
-                  <source type="image/webp" srcset="img/img-badge-slider-mob@1x.webp 1x, img/img-badge-slider-mob@1x.webp 2x">
-                  <img src="../img/img-badge-slider-mob@1x.png" srcset="img/img-badge-slider-mob@1x.png 1x, img/img-badge-slider-mob@2x.png 2x" width="65" height="76" alt="Значок врача" class="our-doctors__img">
-                </picture>
-              </div>
-            </div>
-            <div class="our-doctors__item-slide-wrap">
-              <h3>Зелим Хаманаев</h3>
-              <div class="our-doctors__item-slide">
-                <picture>
-                  <source type="image/webp" srcset="img/img-badge-slider2@2x.webp 1x, img/img-badge-slider2@2x.webp 2x">
-                  <img src="../img/img-badge-slider2@1x.png" srcset="img/img-badge-slider2@1x.png 1x, img/img-badge-slider2@2x.png 2x" width="67" height="74" alt="Значок врача" class="our-doctors__img">
-                </picture>
-              </div>
-            </div>
-            <div class="our-doctors__item-slide-wrap">
-              <h3>Имя Фамилия</h3>
-              <div class="our-doctors__item-slide">
-                <picture>
-                  <source type="image/webp" srcset="img/img-badge-slider1@1x.webp 1x, img/img-badge-slider1@2x.webp 2x">
-                  <img src="../img/img-badge-slider1@1x.png" srcset="img/img-badge-slider1@1x.png 1x, img/img-badge-slider1@2x.png 2x" width="67" height="74" alt="Значок врача" class="our-doctors__img">
-                </picture>
-              </div>
-            </div>
-            <div class="our-doctors__item-slide-wrap">
-              <h3>Имя Фамилия</h3>
-              <div class="our-doctors__item-slide">
-                <picture>
-                  <source type="image/webp" srcset="img/img-badge-slider3@1x.webp 1x, img/img-badge-slider3@2x.webp 2x">
-                  <img src="../img/img-badge-slider3@1x.png" srcset="img/img-badge-slider3@1x.png 1x, img/img-badge-slider3@2x.png 2x" width="67" height="76" alt="Значок врача" class="our-doctors__img">
-                </picture>
-              </div>
-            </div>
-            <div class="our-doctors__item-slide-wrap">
-              <h3>Имя Фамилия</h3>
-              <div class="our-doctors__item-slide">
-                <picture>
-                  <source type="image/webp" srcset="img/img-badge-slider-mob@1x.webp 1x, img/img-badge-slider-mob@1x.webp 2x">
-                  <img src="../img/img-badge-slider-mob@1x.png" srcset="img/img-badge-slider-mob@1x.png 1x, img/img-badge-slider-mob@2x.png 2x" width="65" height="76" alt="Значок врача" class="our-doctors__img">
-                </picture>
-              </div>
-            </div>
-            <div class="our-doctors__item-slide-wrap">
-              <h3>Зелим Хаманаев</h3>
-              <div class="our-doctors__item-slide">
-                <picture>
-                  <source type="image/webp" srcset="img/img-badge-slider2@2x.webp 1x, img/img-badge-slider2@2x.webp 2x">
-                  <img src="../img/img-badge-slider2@1x.png" srcset="img/img-badge-slider2@1x.png 1x, img/img-badge-slider2@2x.png 2x" width="67" height="74" alt="Значок врача" class="our-doctors__img">
-                </picture>
-              </div>
-            </div>
-            <div class="our-doctors__item-slide-wrap">
-              <h3>Имя Фамилия</h3>
-              <div class="our-doctors__item-slide">
-                <picture>
-                  <source type="image/webp" srcset="img/img-badge-slider1@1x.webp 1x, img/img-badge-slider1@2x.webp 2x">
-                  <img src="../img/img-badge-slider1@1x.png" srcset="img/img-badge-slider1@1x.png 1x, img/img-badge-slider1@2x.png 2x" width="67" height="74" alt="Значок врача" class="our-doctors__img">
-                </picture>
-              </div>
-            </div>
-            <div class="our-doctors__item-slide-wrap">
-              <h3>Имя Фамилия</h3>
-              <div class="our-doctors__item-slide">
-                <picture>
-                  <source type="image/webp" srcset="img/img-badge-slider3@1x.webp 1x, img/img-badge-slider3@2x.webp 2x">
-                  <img src="../img/img-badge-slider3@1x.png" srcset="img/img-badge-slider3@1x.png 1x, img/img-badge-slider3@2x.png 2x" width="67" height="76" alt="Значок врача" class="our-doctors__img">
-                </picture>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p><span>Зелим Хаманаев</span> стоматолог-ортопед опыт работы: <span>8</span> лет</p>
-        <div class="our-doctors__container-big">
-          <div class="our-doctors__list-big-wrap our-doctors__list-wrap--big">
-            <div class="our-doctors__item-slide-big">
-              <picture>
-                <source type="image/webp" srcset="img/img-slider-mob4@1x.webp 1x, img/img-slider-mob4@2x.webp 2x">
-                <source type="image/webp" srcset="img/img-slider4@1x.webp 1x, img/img-slider4@1x.webp 2x">
-                <img src="../img/img-slider4@1x.png" srcset="img/img-slider4@1x.png 1x, img/img-slider4@2x.png 2x" width="502" height="461" alt="Фото врача" class="our-doctors__img">
-              </picture>
-            </div>
-            <div class="our-doctors__item-slide-big">
-              <picture>
-                <source type="image/webp" srcset="img/img-slider-mob2@1x.webp 1x, img/img-slider-mob2@1x.webp 2x">
-                <source type="image/webp" srcset="img/img-slider2@2x.webp 1x, img/img-slider2@2x.webp 2x">
-                <img src="../img/img-slider2@1x.png" srcset="img/img-slider2@1x.png 1x, img/img-slider2@2x.png 2x" width="479" height="520" alt="Фото врача" class="our-doctors__img">
-              </picture>
-            </div>
-            <div class="our-doctors__item-slide-big">
-              <picture>
-                <source type="image/webp" srcset="img/img-slider-mob1@1x.webp 1x, img/img-slider-mob1@2x.webp 2x">
-                <source type="image/webp" srcset="img/img-slider1@1x.webp 1x, img/img-slider1@2x.webp 2x">
-                <img src="../img/img-slider1@1x.png" srcset="img/img-slider1@1x.png 1x, img/img-slider1@2x.png 2x" width="465" height="453" alt="Фото врача" class="our-doctors__img">
-              </picture>
-            </div>
-            <div class="our-doctors__item-slide-big">
-              <picture>
-                <source type="image/webp" srcset="img/img-slider-mob3@1x.webp 1x, img/img-slider-mob3@2x.webp 2x">
-                <source type="image/webp" srcset="img/img-slider3@1x.webp 1x, img/img-slider3@2x.webp 2x">
-                <img src="../img/img-slider3@1x.png" srcset="img/img-slider3@1x.png 1x, img/img-slider3@2x.png 2x" width="459" height="461" alt="Фото врача" class="our-doctors__img">
-              </picture>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="address">
+  	<section class="our-doctors">
+		<div class="our-doctors__wrap">
+			<h2>Наши врачи</h2>
+			<div class="our-doctors__container-wrap">
+				<div class="our-doctors__container-mini">
+					<div class="our-doctors__list-mini-wrap our-doctors__list-wrap&#45;&#45;mini">
+						<div class="our-doctors__item-slide-wrap our-doctors__item-slide-wrap--doc1">
+							<h3>Имя Фамилия</h3>
+							<div class="our-doctors__item-slide">
+								<picture>
+									<source type="image/webp" srcset="img/img-badge-slider-mob@1x.webp 1x, img/img-badge-slider-mob@1x.webp 2x">
+									<img src="../img/img-badge-slider-mob@1x.png" srcset="img/img-badge-slider-mob@1x.png 1x, img/img-badge-slider-mob@2x.png 2x" width="65" height="76" alt="Значок врача"
+														class="our-doctors__img">
+								</picture>
+							</div>
+							<p><span>Имя Фамилия</span> стоматолог-ортопед опыт работы: <span>8</span> лет</p>
+						</div>
+						<div class="our-doctors__item-slide-wrap our-doctors__item-slide-wrap--doc2">
+							<h3>Зелим Хаманаев</h3>
+							<div class="our-doctors__item-slide">
+								<picture>
+									<source type="image/webp" srcset="img/img-badge-slider2@2x.webp 1x, img/img-badge-slider2@2x.webp 2x">
+									<img src="../img/img-badge-slider2@1x.png" srcset="img/img-badge-slider2@1x.png 1x, img/img-badge-slider2@2x.png 2x" width="67" height="74" alt="Значок врача"
+														class="our-doctors__img">
+								</picture>
+							</div>
+							<p><span>Зелим Хаманаев</span> стоматолог-ортопед опыт работы: <span>8</span> лет</p>
+						</div>
+						<div class="our-doctors__item-slide-wrap our-doctors__item-slide-wrap--doc3">
+							<h3>Имя Фамилия</h3>
+							<div class="our-doctors__item-slide">
+								<picture>
+									<source type="image/webp" srcset="img/img-badge-slider1@1x.webp 1x, img/img-badge-slider1@2x.webp 2x">
+									<img src="../img/img-badge-slider1@1x.png" srcset="img/img-badge-slider1@1x.png 1x, img/img-badge-slider1@2x.png 2x" width="67" height="74" alt="Значок врача"
+														class="our-doctors__img">
+								</picture>
+							</div>
+							<p><span>Имя Фамилия</span> стоматолог-ортопед опыт работы: <span>8</span> лет</p>
+						</div>
+						<div class="our-doctors__item-slide-wrap our-doctors__item-slide-wrap--doc4">
+							<h3>Имя Фамилия</h3>
+							<div class="our-doctors__item-slide">
+								<picture>
+									<source type="image/webp" srcset="img/img-badge-slider3@1x.webp 1x, img/img-badge-slider3@2x.webp 2x">
+									<img src="../img/img-badge-slider3@1x.png" srcset="img/img-badge-slider3@1x.png 1x, img/img-badge-slider3@2x.png 2x" width="67" height="76" alt="Значок врача"
+														class="our-doctors__img">
+								</picture>
+							</div>
+							<p><span>Имя Фамилия</span> стоматолог-ортопед опыт работы: <span>8</span> лет</p>
+						</div>
+
+						<div class="our-doctors__item-slide-wrap our-doctors__item-slide-wrap--doc1">
+							<h3>Имя Фамилия</h3>
+							<div class="our-doctors__item-slide">
+								<picture>
+									<source type="image/webp" srcset="img/img-badge-slider-mob@1x.webp 1x, img/img-badge-slider-mob@1x.webp 2x">
+									<img src="../img/img-badge-slider-mob@1x.png" srcset="img/img-badge-slider-mob@1x.png 1x, img/img-badge-slider-mob@2x.png 2x" width="65" height="76" alt="Значок врача"
+														class="our-doctors__img">
+								</picture>
+							</div>
+							<p><span>Имя Фамилия</span> стоматолог-ортопед опыт работы: <span>8</span> лет</p>
+						</div>
+						<div class="our-doctors__item-slide-wrap our-doctors__item-slide-wrap--doc2">
+							<h3>Зелим Хаманаев</h3>
+							<div class="our-doctors__item-slide">
+								<picture>
+									<source type="image/webp" srcset="img/img-badge-slider2@2x.webp 1x, img/img-badge-slider2@2x.webp 2x">
+									<img src="../img/img-badge-slider2@1x.png" srcset="img/img-badge-slider2@1x.png 1x, img/img-badge-slider2@2x.png 2x" width="67" height="74" alt="Значок врача"
+														class="our-doctors__img">
+								</picture>
+							</div>
+							<p><span>Зелим Хаманаев</span> стоматолог-ортопед опыт работы: <span>8</span> лет</p>
+						</div>
+						<div class="our-doctors__item-slide-wrap our-doctors__item-slide-wrap--doc3">
+							<h3>Имя Фамилия</h3>
+							<div class="our-doctors__item-slide">
+								<picture>
+									<source type="image/webp" srcset="img/img-badge-slider1@1x.webp 1x, img/img-badge-slider1@2x.webp 2x">
+									<img src="../img/img-badge-slider1@1x.png" srcset="img/img-badge-slider1@1x.png 1x, img/img-badge-slider1@2x.png 2x" width="67" height="74" alt="Значок врача"
+														class="our-doctors__img">
+								</picture>
+							</div>
+							<p><span>Имя Фамилия</span> стоматолог-ортопед опыт работы: <span>8</span> лет</p>
+						</div>
+						<div class="our-doctors__item-slide-wrap our-doctors__item-slide-wrap--doc4">
+							<h3>Имя Фамилия</h3>
+							<div class="our-doctors__item-slide">
+								<picture>
+									<source type="image/webp" srcset="img/img-badge-slider3@1x.webp 1x, img/img-badge-slider3@2x.webp 2x">
+									<img src="../img/img-badge-slider3@1x.png" srcset="img/img-badge-slider3@1x.png 1x, img/img-badge-slider3@2x.png 2x" width="67" height="76" alt="Значок врача"
+														class="our-doctors__img">
+								</picture>
+							</div>
+							<p><span>Имя Фамилия</span> стоматолог-ортопед опыт работы: <span>8</span> лет</p>
+						</div>
+					</div>
+				</div>
+				<div class="our-doctors__container-big">
+					<div class="our-doctors__list-big-wrap our-doctors__list-wrap&#45;&#45;big">
+						<div class="our-doctors__item-slide-big">
+							<picture>
+								<source type="image/webp" srcset="img/img-slider-mob4@1x.webp 1x, img/img-slider-mob4@2x.webp 2x">
+								<source type="image/webp" srcset="img/img-slider4@1x.webp 1x, img/img-slider4@1x.webp 2x">
+								<img src="../img/img-slider4@1x.png" srcset="img/img-slider4@1x.png 1x, img/img-slider4@2x.png 2x" width="502" height="461" alt="Фото врача" class="our-doctors__img-big">
+							</picture>
+						</div>
+						<div class="our-doctors__item-slide-big">
+							<picture>
+								<source type="image/webp" srcset="img/img-slider-mob2@1x.webp 1x, img/img-slider-mob2@1x.webp 2x">
+								<source type="image/webp" srcset="img/img-slider2@2x.webp 1x, img/img-slider2@2x.webp 2x">
+								<img src="../img/img-slider2@1x.png" srcset="img/img-slider2@1x.png 1x, img/img-slider2@2x.png 2x" width="479" height="520" alt="Фото врача" class="our-doctors__img-big">
+							</picture>
+						</div>
+						<div class="our-doctors__item-slide-big">
+							<picture>
+								<source type="image/webp" srcset="img/img-slider-mob3@1x.webp 1x, img/img-slider-mob3@2x.webp 2x">
+								<source type="image/webp" srcset="img/img-slider3@1x.webp 1x, img/img-slider3@2x.webp 2x">
+								<img src="../img/img-slider3@1x.png" srcset="img/img-slider3@1x.png 1x, img/img-slider3@2x.png 2x" width="459" height="461" alt="Фото врача" class="our-doctors__img-big">
+							</picture>
+						</div>
+						<div class="our-doctors__item-slide-big">
+							<picture>
+								<source type="image/webp" srcset="img/img-slider-mob1@1x.webp 1x, img/img-slider-mob1@2x.webp 2x">
+								<source type="image/webp" srcset="img/img-slider1@1x.webp 1x, img/img-slider1@2x.webp 2x">
+								<img src="../img/img-slider1@1x.png" srcset="img/img-slider1@1x.png 1x, img/img-slider1@2x.png 2x" width="465" height="453" alt="Фото врача" class="our-doctors__img-big">
+							</picture>
+						</div>
+
+						<div class="our-doctors__item-slide-big">
+							<picture>
+								<source type="image/webp" srcset="img/img-slider-mob4@1x.webp 1x, img/img-slider-mob4@2x.webp 2x">
+								<source type="image/webp" srcset="img/img-slider4@1x.webp 1x, img/img-slider4@1x.webp 2x">
+								<img src="../img/img-slider4@1x.png" srcset="img/img-slider4@1x.png 1x, img/img-slider4@2x.png 2x" width="502" height="461" alt="Фото врача" class="our-doctors__img-big">
+							</picture>
+						</div>
+						<div class="our-doctors__item-slide-big">
+							<picture>
+								<source type="image/webp" srcset="img/img-slider-mob2@1x.webp 1x, img/img-slider-mob2@1x.webp 2x">
+								<source type="image/webp" srcset="img/img-slider2@2x.webp 1x, img/img-slider2@2x.webp 2x">
+								<img src="../img/img-slider2@1x.png" srcset="img/img-slider2@1x.png 1x, img/img-slider2@2x.png 2x" width="479" height="520" alt="Фото врача" class="our-doctors__img-big">
+							</picture>
+						</div>
+						<div class="our-doctors__item-slide-big">
+							<picture>
+								<source type="image/webp" srcset="img/img-slider-mob3@1x.webp 1x, img/img-slider-mob3@2x.webp 2x">
+								<source type="image/webp" srcset="img/img-slider3@1x.webp 1x, img/img-slider3@2x.webp 2x">
+								<img src="../img/img-slider3@1x.png" srcset="img/img-slider3@1x.png 1x, img/img-slider3@2x.png 2x" width="459" height="461" alt="Фото врача" class="our-doctors__img-big">
+							</picture>
+						</div>
+						<div class="our-doctors__item-slide-big">
+							<picture>
+								<source type="image/webp" srcset="img/img-slider-mob1@1x.webp 1x, img/img-slider-mob1@2x.webp 2x">
+								<source type="image/webp" srcset="img/img-slider1@1x.webp 1x, img/img-slider1@2x.webp 2x">
+								<img src="../img/img-slider1@1x.png" srcset="img/img-slider1@1x.png 1x, img/img-slider1@2x.png 2x" width="465" height="453" alt="Фото врача" class="our-doctors__img-big">
+							</picture>
+						</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    <section class="address">
     <div class="address__wrap">
       <h2>Наш адрес</h2>
       <p>мы находимся в центре Москвы</p>
       <div class="address__map-wrap">
-        <iframe width="320" height="229" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%D0%B3.%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,%20%D1%83%D0%BB,%20%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%D0%A4%D0%B8%D0%BB%D0%B5%D0%B2%D1%81%D0%BA%D0%B0%D1%8F,%2025+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+        <iframe width="320" height="229" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%D0%B3.%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,%20%D1%83%D0%BB,%20%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%D0%A4%D0%B8%D0%BB%D0%B5%D0%B2%D1%81%D0%BA%D0%B0%D1%8F,%2025+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
       </div>
       <div class="address__text-wrap">
         <span class="address__span">Адрес:</span>
@@ -418,7 +470,7 @@
       </div>
     </div>
   </section>
-  <section class="make-an-appointment">
+    <section class="make-an-appointment">
     <div class="make-an-appointment__wrap">
       <h2>Узнать цены<br> и сроки, получить консультацию и записаться на приём</h2>
       <p>Вы можете, заказать <strong>БЕСПЛАТНЫЙ</strong> звонок</p>
@@ -429,11 +481,11 @@
           <ul class="form-callme__list">
             <li class="form-callme__item">
               <label for="callme-name"></label>
-              <input type="text" name="name" id="callme-name" placeholder="Ваше имя" required="">
+              <input type="text" name="name" id="callme-name" placeholder="Ваше имя" required>
             </li>
             <li class="form-callme__item">
               <label for="callme-tel"></label>
-              <input type="tel" name="tel" id="callme-tel" placeholder="Ваш номер телефона" required="">
+              <input type="tel" name="tel" id="callme-tel" placeholder="Ваш номер телефона" required>
             </li>
           </ul>
         </div>
@@ -442,8 +494,9 @@
     </div>
   </section>
 </main>
+
 <footer class="footer-page">
-  <div class="footer-page__wrap">
+    <div class="footer-page__wrap">
     <div class="footer-page__logo-wrap">
       <a class="footer-page__logo">
         <picture>
@@ -534,90 +587,87 @@
   </div>
 </footer>
 
-<div class="modal-form">
-  <form action="#" method="post" class="modal-form__get-plan">
-    <h2>Получить план лечения</h2>
-    <p>Заполните форму, чтобы узнать сроки и цены</p>
-    <ul class="modal-form__list">
-      <li class="modal-form__item">
-        <svg class="modal-form__icon" width="13" height="14" viewBox="0 0 30 30">
-          <use xlink:href="img/sprite_auto.svg#icon-user"></use>
-        </svg>
-        <label for="get-plan-name"></label>
-        <input type="text" name="get-plan-name" id="get-plan-name" placeholder="Введите Ваше имя" required="">
-      </li>
+  <div class="modal-form">
+    <form action="#" method="post" class="modal-form__get-plan">
+      <h2>Получить план лечения</h2>
+      <p>Заполните форму, чтобы узнать сроки и цены</p>
+      <ul class="modal-form__list">
+        <li class="modal-form__item">
+          <svg class="modal-form__icon" width="13" height="14" viewBox="0 0 30 30">
+            <use xlink:href="img/sprite_auto.svg#icon-user"></use>
+          </svg>
+          <label for="get-plan-name"></label>
+          <input type="text" name="get-plan-name" id="get-plan-name" placeholder="Введите Ваше имя" required>
+        </li>
 
-      <li class="modal-form__item">
-        <svg class="modal-form__icon" width="13" height="13" viewBox="0 0 30 30">
-          <use xlink:href="img/sprite_auto.svg#icon-form-phone"></use>
-        </svg>
-        <label for="get-plan-tel"></label>
-        <input type="tel" name="get-plan-tel" pattern="7[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" id="get-plan-tel" placeholder="+7 (927) 123-45-67" value="" maxlength="20">
-      </li>
-    </ul>
-    <button class="modal-form__button button" type="submit" aria-label="Кнопка для отправки формы">Узнать сроки и цены</button>
-    <button class="modal-form__toggle" type="button" aria-label="Модальное окно"></button>
-  </form>
-</div>
+        <li class="modal-form__item">
+          <svg class="modal-form__icon" width="13" height="13" viewBox="0 0 30 30">
+            <use xlink:href="img/sprite_auto.svg#icon-form-phone"></use>
+          </svg>
+          <label for="get-plan-tel"></label>
+          <input type="tel" name="get-plan-tel" pattern="7[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" id="get-plan-tel" placeholder="+7 (927) 123-45-67" value="" maxlength="20">
+        </li>
+      </ul>
+      <button class="modal-form__button button" type="submit" aria-label="Кнопка для отправки формы">Узнать сроки и цены</button>
+      <button class="modal-form__toggle" type="button" aria-label="Модальное окно"></button>
+    </form>
+  </div>
+  <div class="modal-form-call">
+    <form action="#" method="post" class="modal-form-call__call">
+      <h2>Заказать бесплатный звонок</h2>
+      <p>Заполните форму, наш менеджер свяжется с Вами</p>
+      <ul class="modal-form-call__list">
+        <li class="modal-form-call__item">
+          <svg class="modal-form-call__icon" width="13" height="14" viewBox="0 0 30 30">
+            <use xlink:href="img/sprite_auto.svg#icon-user"></use>
+          </svg>
+          <label for="call-name"></label>
+          <input type="text" name="get-plan-name" id="call-name" placeholder="Введите Ваше имя" required>
+        </li>
 
-<div class="modal-form-call">
-  <form action="#" method="post" class="modal-form-call__call">
-    <h2>Заказать бесплатный звонок</h2>
-    <p>Заполните форму, наш менеджер свяжется с Вами</p>
-    <ul class="modal-form-call__list">
-      <li class="modal-form-call__item">
-        <svg class="modal-form-call__icon" width="13" height="14" viewBox="0 0 30 30">
-          <use xlink:href="img/sprite_auto.svg#icon-user"></use>
-        </svg>
-        <label for="call-name"></label>
-        <input type="text" name="get-plan-name" id="call-name" placeholder="Введите Ваше имя" required="">
-      </li>
+        <li class="modal-form-call__item">
+          <svg class="modal-form-call__icon" width="13" height="13" viewBox="0 0 30 30">
+            <use xlink:href="img/sprite_auto.svg#icon-form-phone"></use>
+          </svg>
+          <label for="call-tel"></label>
+          <input type="tel" name="call-tel" pattern="7[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" id="call-tel" placeholder="+7 (927) 123-45-67" value="" maxlength="20">
+        </li>
+      </ul>
+      <button class="modal-form-call__button button" type="submit" aria-label="Кнопка для отправки формы">Заказать <span>бесплатный</span> звонок</button>
+      <button class="modal-form-call__toggle" type="button" aria-label="Модальное окно"></button>
+    </form>
+  </div>
+  <div class="modal-form-reception">
+    <form action="#" method="post" class="modal-form-reception__reception">
+      <h2>Записаться на приём</h2>
+      <p>Заполните форму, чтобы записаться на приём</p>
+      <ul class="modal-form-reception__list">
+        <li class="modal-form-reception__item">
+          <svg class="modal-form-reception__icon" width="13" height="14" viewBox="0 0 30 30">
+            <use xlink:href="img/sprite_auto.svg#icon-user"></use>
+          </svg>
+          <label for="reception-name"></label>
+          <input type="text" name="reception-name" id="reception-name" placeholder="Введите Ваше имя" required>
+        </li>
 
-      <li class="modal-form-call__item">
-        <svg class="modal-form-call__icon" width="13" height="13" viewBox="0 0 30 30">
-          <use xlink:href="img/sprite_auto.svg#icon-form-phone"></use>
-        </svg>
-        <label for="call-tel"></label>
-        <input type="tel" name="call-tel" pattern="7[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" id="call-tel" placeholder="+7 (927) 123-45-67" value="" maxlength="20">
-      </li>
-    </ul>
-    <button class="modal-form-call__button button" type="submit" aria-label="Кнопка для отправки формы">Заказать <span>бесплатный</span> звонок</button>
-    <button class="modal-form-call__toggle" type="button" aria-label="Модальное окно"></button>
-  </form>
-</div>
+        <li class="modal-form-reception__item">
+          <svg class="modal-form-reception__icon" width="13" height="13" viewBox="0 0 30 30">
+            <use xlink:href="img/sprite_auto.svg#icon-form-phone"></use>
+          </svg>
+          <label for="reception-tel"></label>
+          <input type="tel" name="reception-tel" pattern="7[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" id="reception-tel" placeholder="+7 (927) 123-45-67" value="" maxlength="20">
+        </li>
+      </ul>
+      <button class="modal-form-reception__button button" type="submit" aria-label="Кнопка для отправки формы">Заказать звонок</button>
+      <button class="modal-form-reception__toggle" type="button" aria-label="Модальное окно"></button>
+    </form>
+  </div>
+  <div class="modal-accept">
+    <h2>Ваша заявка <span>успешно</span> принята!</h2>
+    <p>Мы свяжемся с вами в ближайшее время</p>
+  </div>
 
-<div class="modal-form-reception">
-  <form action="#" method="post" class="modal-form-reception__reception">
-    <h2>Записаться на приём</h2>
-    <p>Заполните форму, чтобы записаться на приём</p>
-    <ul class="modal-form-reception__list">
-      <li class="modal-form-reception__item">
-        <svg class="modal-form-reception__icon" width="13" height="14" viewBox="0 0 30 30">
-          <use xlink:href="img/sprite_auto.svg#icon-user"></use>
-        </svg>
-        <label for="reception-name"></label>
-        <input type="text" name="reception-name" id="reception-name" placeholder="Введите Ваше имя" required="">
-      </li>
-
-      <li class="modal-form-reception__item">
-        <svg class="modal-form-reception__icon" width="13" height="13" viewBox="0 0 30 30">
-          <use xlink:href="img/sprite_auto.svg#icon-form-phone"></use>
-        </svg>
-        <label for="reception-tel"></label>
-        <input type="tel" name="reception-tel" pattern="7[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" id="reception-tel" placeholder="+7 (927) 123-45-67" value="" maxlength="20">
-      </li>
-    </ul>
-    <button class="modal-form-reception__button button" type="submit" aria-label="Кнопка для отправки формы">Заказать звонок</button>
-    <button class="modal-form-reception__toggle" type="button" aria-label="Модальное окно"></button>
-  </form>
-</div>
-
-<div class="modal-accept">
-  <h2>Ваша заявка <span>успешно</span> принята!</h2>
-  <p>Мы свяжемся с вами в ближайшее время</p>
-</div>
-
-<script src="js/vendor.js"></script>
-<script src="js/main.js"></script>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

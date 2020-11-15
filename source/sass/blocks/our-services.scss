@@ -1,308 +1,308 @@
 .our-services {
-  overflow: hidden;
-  background: linear-gradient(245deg, rgba(1, 112, 176, 1) 25%, rgba(24, 187, 235, 1) 100%);
+	overflow: hidden;
+	background: linear-gradient(245deg, rgba(1, 112, 176, 1) 25%, rgba(24, 187, 235, 1) 100%);
 }
 
 .our-services__wrap {
-  position: relative;
-  max-width: 300px;
-  margin: 0 auto;
-  padding: 20px 5px 188px;
+	position: relative;
+	max-width: 300px;
+	margin: 0 auto;
+	padding: 20px 5px 188px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 8px;
-    left: 0;
-    right: 0;
-    width: 249px;
-    height: 174px;
-    margin: 0 auto;
-    background-image: url("../img/img-problems-mob@1x.png");
-    background-repeat: no-repeat;
-  }
+	&::before {
+		content: '';
+		position: absolute;
+		bottom: 8px;
+		left: 0;
+		right: 0;
+		width: 249px;
+		height: 174px;
+		margin: 0 auto;
+		background-image: url('../img/img-problems-mob@1x.png');
+		background-repeat: no-repeat;
+	}
 }
 
 .our-services__wrap h2 {
-  margin: 0;
-  font-weight: normal;
-  text-align: center;
-  color: white;
+	margin: 0;
+	font-weight: normal;
+	text-align: center;
+	color: white;
 }
 
 .our-services__list {
-  padding: 0;
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 6px;
-  grid-row-gap: 17px;
-  justify-items: stretch;
-  align-items: stretch;
-  margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 6px;
+	grid-row-gap: 17px;
+	justify-items: stretch;
+	align-items: stretch;
+	margin: 0 auto;
 }
 
 .our-services__item {
-  padding: 100px 0 0;
+	padding: 100px 0 0;
 
-  &:nth-child(3n) {
-    padding: 88px 0 0;
-  }
+	&:nth-child( 3n ) {
+		padding: 88px 0 0;
+	}
 
-  &:nth-child(4n) {
-    padding: 88px 0 0;
-  }
+	&:nth-child( 4n ) {
+		padding: 88px 0 0;
+	}
 
-  &:nth-child(5n) {
-    padding: 90px 0 0;
-  }
+	&:nth-child( 5n ) {
+		padding: 90px 0 0;
+	}
 
-  &:nth-child(6n) {
-    padding: 90px 0 0;
-  }
+	&:nth-child( 6n ) {
+		padding: 90px 0 0;
+	}
 }
 
 .our-services__item h3 {
-  margin: 0 0 5px;
-  font-size: 15px;
-  font-weight: normal;
-  color: white;
-  text-align: center;
-  line-height: 18px;
+	margin: 0 0 5px;
+	font-size: 15px;
+	font-weight: normal;
+	color: white;
+	text-align: center;
+	line-height: 18px;
 }
 
 .our-services__item p {
-  margin: 0;
-  padding: 0 25px;
-  font-size: 8px;
-  font-weight: normal;
-  line-height: 10px;
-  text-align: center;
-  color: white;
+	margin: 0;
+	padding: 0 25px;
+	font-size: 8px;
+	font-weight: normal;
+	line-height: 10px;
+	text-align: center;
+	color: white;
 }
 
 .our-services__item--teeth p {
-  padding-left: 0;
-  padding-right: 0;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .our-services__item--orthopedics p {
-  padding-left: 0;
-  padding-right: 0;
-  letter-spacing: -0.1px;
+	padding-left: 0;
+	padding-right: 0;
+	letter-spacing: -0.1px;
 }
 
 .our-services__item--surgery p {
-  padding: 0 31px;
+	padding: 0 31px;
 }
 
 .our-services__item--orthodontics p {
-  padding: 0 20px;
+	padding: 0 20px;
 }
 
 .our-services__item--dentistry {
-  background-image: url("../img/icon-dentist.svg");
-  background-repeat: no-repeat;
-  background-size: 81px 84px;
-  background-position: 29px 12px;
+	background-image: url('../img/icon-dentist.svg');
+	background-repeat: no-repeat;
+	background-size: 81px 84px;
+	background-position: 29px 12px;
 }
 
 .our-services__item--teeth {
-  background-image: url("../img/icon-implant.svg");
-  background-repeat: no-repeat;
-  background-size: 81px 84px;
-  background-position: 31px 12px;
+	background-image: url('../img/icon-implant.svg');
+	background-repeat: no-repeat;
+	background-size: 81px 84px;
+	background-position: 31px 12px;
 }
 
 .our-services__item--child {
-  background-image: url("../img/icon-child.svg");
-  background-repeat: no-repeat;
-  background-size: 81px 84px;
-  background-position: 29px 0;
+	background-image: url('../img/icon-child.svg');
+	background-repeat: no-repeat;
+	background-size: 81px 84px;
+	background-position: 29px 0;
 }
 
 .our-services__item--orthopedics {
-  background-image: url("../img/icon-dental.svg");
-  background-repeat: no-repeat;
-  background-size: 81px 84px;
-  background-position: 33px 0;
+	background-image: url('../img/icon-dental.svg');
+	background-repeat: no-repeat;
+	background-size: 81px 84px;
+	background-position: 33px 0;
 }
 
 .our-services__item--surgery {
-  background-image: url("../img/icon-surgery.svg");
-  background-repeat: no-repeat;
-  background-size: 81px 84px;
-  background-position: 29px 0;
+	background-image: url('../img/icon-surgery.svg');
+	background-repeat: no-repeat;
+	background-size: 81px 84px;
+	background-position: 29px 0;
 }
 
 .our-services__item--orthodontics {
-  background-image: url("../img/icon-braces.svg");
-  background-repeat: no-repeat;
-  background-size: 81px 84px;
-  background-position: 33px 0;
+	background-image: url('../img/icon-braces.svg');
+	background-repeat: no-repeat;
+	background-size: 81px 84px;
+	background-position: 33px 0;
 }
 
 @media only screen and (min-width: 768px) {
-  .our-services__wrap {
-    max-width: 768px;
-    padding: 60px 150px 75px;
+	.our-services__wrap {
+		max-width: 768px;
+		padding: 60px 150px 75px;
 
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: -204px;
-      right: -730px;
-      width: 173px;
-      height: 256px;
-      background-image: url("../img/img-tools-mob@1x.png");
-      background-repeat: no-repeat;
-    }
-  }
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: -204px;
+			right: -730px;
+			width: 173px;
+			height: 256px;
+			background-image: url('../img/img-tools-mob@1x.png');
+			background-repeat: no-repeat;
+		}
+	}
 
-  .our-services__wrap h2 {
-    margin-bottom: 50px;
-  }
+	.our-services__wrap h2 {
+		margin-bottom: 50px;
+	}
 
-  .our-services__list {
-    grid-column-gap: 80px;
-    grid-row-gap: 30px;
-  }
+	.our-services__list {
+		grid-column-gap: 80px;
+		grid-row-gap: 30px;
+	}
 
-  .our-services__item--dentistry,
-  .our-services__item--teeth {
-    background-position: 60px 7px;
-  }
+	.our-services__item--dentistry,
+	.our-services__item--teeth {
+		background-position: 60px 7px;
+	}
 
-  .our-services__item--child,
-  .our-services__item--orthopedics,
-  .our-services__item--surgery,
-  .our-services__item--orthodontics {
-    background-position: 60px 0;
-  }
+	.our-services__item--child,
+	.our-services__item--orthopedics,
+	.our-services__item--surgery,
+	.our-services__item--orthodontics {
+		background-position: 60px 0;
+	}
 
-  .our-services__item h3 {
-    padding: 0 26px;
-  }
+	.our-services__item h3 {
+		padding: 0 26px;
+	}
 
-  .our-services__item p {
-    padding: 0 50px;
-  }
+	.our-services__item p {
+		padding: 0 50px;
+	}
 
-  .our-services__item--teeth p {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+	.our-services__item--teeth p {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 
-  .our-services__item--orthopedics p {
-    padding-left: 0;
-    padding-right: 0;
-  }
+	.our-services__item--orthopedics p {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 @media only screen and (min-width: 1440px) {
-  .our-services__wrap {
-    max-width: 1200px;
-    padding: 43px 161px 45px;
+	.our-services__wrap {
+		max-width: 1200px;
+		padding: 43px 161px 50px;
 
-    &::before {
-      width: 485px;
-      height: 265px;
-      bottom: -81px;
-      right: -1448px;
-      background-image: url("../img/img-tools@1x.png");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-    }
-  }
+		&::before {
+			width: 485px;
+			height: 265px;
+			bottom: -81px;
+			right: -1448px;
+			background-image: url('../img/img-tools@1x.png');
+			background-repeat: no-repeat;
+			background-position: 0 0;
+		}
+	}
 
-  .our-services__wrap h2 {
-    font-size: 48px;
-    margin-bottom: 35px;
-  }
+	.our-services__wrap h2 {
+		font-size: 48px;
+		margin-bottom: 35px;
+	}
 
-  .our-services__item h3 {
-    font-size: 24px;
-    line-height: 28px;
-    margin-bottom: 10px;
-  }
+	.our-services__item h3 {
+		font-size: 24px;
+		line-height: 28px;
+		margin-bottom: 5px;
+	}
 
-  .our-services__item p {
-    padding: 0 15px;
-    font-size: 14px;
-  }
+	.our-services__item p {
+		padding: 0 30px;
+		font-size: 12px;
+	}
 
-  .our-services p {
-    line-height: 15px;
-    margin-bottom: 10px;
-  }
+	.our-services p {
+		line-height: 15px;
+		margin-bottom: 10px;
+	}
 
-  .our-services__list {
-    grid-column-gap: 61px;
-    grid-row-gap: 0;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+	.our-services__list {
+		grid-column-gap: 61px;
+		grid-row-gap: 4px;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 
-  .our-services__item {
-    padding: 126px 0 0;
-  }
+	.our-services__item {
+		padding: 126px 0 0;
+	}
 
-  .our-services__item--dentistry,
-  .our-services__item--teeth,
-  .our-services__item--child,
-  .our-services__item--orthopedics,
-  .our-services__item--surgery,
-  .our-services__item--orthodontics {
-    background-size: 110px 110px;
-    background-position: 69px 0;
-  }
+	.our-services__item--dentistry,
+	.our-services__item--teeth,
+	.our-services__item--child,
+	.our-services__item--orthopedics,
+	.our-services__item--surgery,
+	.our-services__item--orthodontics {
+		background-size: 110px 110px;
+		background-position: 69px 0;
+	}
 
-  .our-services__item--teeth p,
-  .our-services__item--orthopedics p {
-    padding: 0;
-  }
+	.our-services__item--teeth p,
+	.our-services__item--orthopedics p {
+		padding: 0;
+	}
 
-  .our-services__item--teeth p {
-    font-size: 13px;
-    letter-spacing: -1px;
-  }
+	.our-services__item--teeth p {
+		font-size: 13px;
+		letter-spacing: -0.9px;
+	}
 
-  .our-services__item--surgery p {
-    padding: 0 36px;
-  }
+	.our-services__item--surgery p {
+		padding: 0 55px;
+	}
 
-  .our-services__item--orthodontics p {
-    padding: 0 12px;
-  }
+	.our-services__item--orthodontics p {
+		padding: 0 20px;
+	}
 
-  .our-services__item--orthopedics h3,
-  .our-services__item--surgery h3,
-  .our-services__item--orthodontics h3 {
-    margin-bottom: 16px;
-  }
+	.our-services__item--orthopedics h3,
+	.our-services__item--surgery h3,
+	.our-services__item--orthodontics h3 {
+		margin-bottom: 16px;
+	}
 
-  .our-services__item--orthopedics p {
-    font-size: 12px;
-    letter-spacing: -1px;
-  }
+	.our-services__item--orthopedics p {
+		font-size: 12px;
+		letter-spacing: -0.9px;
+	}
 
-  .our-services__item:nth-child(3n) {
-    padding: 126px 0 0;
-  }
+	.our-services__item:nth-child( 3n ) {
+		padding: 126px 0 0;
+	}
 
-  .our-services__item:nth-child(4n) {
-    padding: 158px 0 0;
-    background-position: 73px 25px;
-    order: 6;
-  }
+	.our-services__item:nth-child( 4n ) {
+		padding: 153px 0 0;
+		background-position: 73px 25px;
+		order: 6;
+	}
 
-  .our-services__item:nth-child(5n) {
-    padding: 158px 0 0;
-    background-position: 70px 25px;
-    order: 5;
-  }
+	.our-services__item:nth-child( 5n ) {
+		padding: 153px 0 0;
+		background-position: 70px 25px;
+		order: 5;
+	}
 
-  .our-services__item:nth-child(6n) {
-    padding: 158px 0 0;
-    background-position: 70px 25px;
-  }
+	.our-services__item:nth-child( 6n ) {
+		padding: 153px 0 0;
+		background-position: 70px 25px;
+	}
 }
